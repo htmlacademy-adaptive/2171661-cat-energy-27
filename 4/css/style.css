@@ -6,6 +6,13 @@
   src: url("../fonts/lato/Lato-Regular.woff2") format("woff2");
 }
 @font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/lato/Lato-Regular.woff") format("woff");
+}
+@font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
@@ -15,9 +22,27 @@
 @font-face {
   font-family: "Oswald";
   font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/oswald/oswaldregular.woff") format("woff");
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
   font-weight: 500;
   font-display: swap;
   src: url("../fonts/oswald/oswaldmedium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/oswald/oswaldmedium.woff") format("woff");
+}
+.page__body {
+  width: 320px;
+  margin: 0 auto;
 }
 .main-nav {
   margin: 0;
@@ -27,7 +52,7 @@
   list-style-type: none;
 }
 .main-nav__link {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Verdana, sans-serif;
   font-weight: 500;
   text-decoration: none;
   color: #000000;
@@ -54,17 +79,17 @@
 }
 .hero {
   background-image: url("../img/promo-filter-image.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
 }
 .hero__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Verdana, sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   color: #ffffff;
 }
 .hero__description {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Verdana, sans-serif;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -79,14 +104,14 @@
 .button {
   text-transform: uppercase;
   text-decoration: none;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Verdana, sans-serif;
   font-weight: 400;
 }
 .programs__card {
   background-color: #f2f2f2;
 }
 .programs__card-title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Verdana, sans-serif;
   font-size: 24px;
   line-height: 37px;
   color: #000000;
@@ -94,14 +119,14 @@
   font-weight: 400;
 }
 .programs__card-description {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: #444444;
 }
 .programs__card-link {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Verdana, sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 16px;
@@ -110,7 +135,7 @@
   font-weight: 400;
 }
 .advantages__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Verdana, sans-serif;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
@@ -119,7 +144,7 @@
   list-style-type: none;
 }
 .advantages__list-text {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -129,71 +154,80 @@
   background-color: #eaeaea;
 }
 .example-text__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Verdana, sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: #000000;
 }
 .example-text__description {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
 }
 .example-card__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Verdana, sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
 }
 .example-card__description {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
 }
 .example-costs {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Verdana, sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
 }
 .contacts__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Verdana, sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   font-weight: 400;
 }
 .contacts__description {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+}
+.footer {
+  background-color: #f2f2f2;
+}
+.footer__social-icon {
+  color: #666666;
 }
 .html-academy-logo__link {
   text-decoration: none;
 }
 .html-academy-logo__text {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   font-size: 16px;
   line-height: 19.2px;
   font-weight: 400;
   color: #444444;
 }
+.html-academy-logo__icon {
+  color: #666666;
+}
 .form-title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Verdana, sans-serif;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
   font-weight: 400;
 }
 .form-title-description {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Verdana, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #000000;
@@ -201,7 +235,7 @@
   text-transform: uppercase;
 }
 .form-list {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Verdana, sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -225,7 +259,7 @@
   text-transform: uppercase;
 }
 .form-textarea {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Verdana, sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -234,7 +268,7 @@
   border: 1px solid #e7e7e7;
 }
 .form__wrapper-title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Verdana, sans-serif;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
@@ -246,14 +280,14 @@
   border: none;
 }
 .program-selection-text {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   color: #000000;
 }
 .catalog-title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Verdana, sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -263,7 +297,7 @@
   text-decoration: none;
 }
 .product__link-title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Verdana, sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -274,14 +308,14 @@
   list-style-type: none;
 }
 .product-text__item {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
   color: #444444;
 }
 .product-last__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Verdana, sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -301,14 +335,14 @@
   line-height: 20px;
 }
 .additional-goods__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Verdana, sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: #000000;
 }
 .additional-goods__list-item-title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Verdana, sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -316,7 +350,7 @@
   color: #222222;
 }
 .additional-goods__list-item-text {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -330,10 +364,16 @@
   background-color: rgba(104, 183, 56, 0.85);
 }
 .gift__text {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: #ffffff;
+}
+.social-list {
+  list-style-type: none;
+}
+.social-list__item {
+  color: #666666;
 }
 /*# sourceMappingURL=style.css.map */

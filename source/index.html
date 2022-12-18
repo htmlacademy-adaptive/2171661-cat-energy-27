@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -12,6 +13,8 @@
   <header class="main-header">
     <a href="./index.html" class="main-header__logo">
       <img class="main-header__logo-image" src="./img/logo-mobile.svg" width="33" height="38"
+        alt="Логотип сайта Кэт энерджи">
+      <img class="main-header__logo-image" src="./img/logo-mobile-title.svg" width="101" height="18"
         alt="Логотип сайта Кэт энерджи">
     </a>
     <!--navigation-->
@@ -41,12 +44,14 @@
     <!--promo section-->
     <section class="promo">
       <div class="hero">
-        <h1 class="hero__title">Функциональное<br>питание для котов</h1>
-        <span class="hero__description">занялся собой? займись котом!</span>
-        <img class="hero__image" src="./img/promo-product-image.png" alt="Образец питания" width="280" height="270">
-        <a class="button hero__button" href="./form.html">
-          Подобрать программу
-        </a>
+        <div class="hero__wrapper">
+          <h1 class="hero__title">Функциональное<br>питание для котов</h1>
+          <span class="hero__description">занялся собой? займись котом!</span>
+          <img class="hero__image" src="./img/promo-product-image.png" alt="Образец питания" width="280" height="270">
+          <a class="button hero__button" href="./form.html">
+            Подобрать программу
+          </a>
+        </div>
       </div>
       <div class="programs">
         <div class="programs__card">
@@ -67,21 +72,28 @@
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__list-item">
-            <img class="advantages__list-image" src="./img/advantages-icon-leaf.png" alt="Изображение питательных веществ" width="60" height="60">
-            <span class="advantages__list-text">Функциональное питание<br>содержит только полезные<br>питательные вещества.</span>
+            <img class="advantages__list-image" src="./img/advantages-icon-leaf.png"
+              alt="Изображение питательных веществ" width="60" height="60">
+            <span class="advantages__list-text">Функциональное питание<br>содержит только полезные<br>питательные
+              вещества.</span>
           </li>
           <li class="advantages__list-item">
-            <img class="advantages__list-image" src="./img/advantages-icon-water.png" alt="стакан воды" width="60" height="60">
+            <img class="advantages__list-image" src="./img/advantages-icon-water.png" alt="стакан воды" width="60"
+              height="60">
             <span class="advantages__list-text">Выпускается в виде порошка,<br>который нужно лишь залить<br>кипятком и
-            готово.</span>
+              готово.</span>
           </li>
           <li class="advantages__list-item">
-            <img class="advantages__list-image" src="./img/advantages-icon-food.png" alt="столовые приборы" width="60" height="60">
-            <span class="advantages__list-text">Замените один-два приема<br>обычной еды на наше<br>функциональное питание.</span>
+            <img class="advantages__list-image" src="./img/advantages-icon-food.png" alt="столовые приборы" width="60"
+              height="60">
+            <span class="advantages__list-text">Замените один-два приема<br>обычной еды на наше<br>функциональное
+              питание.</span>
           </li>
           <li class="advantages__list-item">
-            <img class="advantages__list-image" src="./img/advantages-icon-clock.png" alt="изображение часов" width="60" height="60">
-            <span class="advantages__list-text">Уже через месяц<br>наслаждайтесь изменениями<br>к лучшему вашего питомца!</span>
+            <img class="advantages__list-image" src="./img/advantages-icon-clock.png" alt="изображение часов" width="60"
+              height="60">
+            <span class="advantages__list-text">Уже через месяц<br>наслаждайтесь изменениями<br>к лучшему вашего
+              питомца!</span>
           </li>
         </ul>
       </div>
@@ -187,8 +199,7 @@
             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#a)">
               <path
-                d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z"
-                />
+                d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z" />
             </g>
             <defs>
               <clipPath id="a1">

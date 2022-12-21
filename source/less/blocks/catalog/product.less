@@ -1,5 +1,37 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  min-height: 208px;
+}
+
+.product__details {
+  width: 140px;
+  min-height: 103px;
+  padding-bottom: 9px;
+}
+
+.product__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .product__link {
+  display: block;
   text-decoration: none;
+  width: 76px;
+  min-height: 41px;
+}
+
+.product__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+}
+
+.product__description {
+  min-height: 44px;
+  width: 140px;
 }
 
 .product__link-title {
@@ -9,4 +41,5 @@
   font-weight: 400;
   color: @dark-grey3;
   text-transform: uppercase;
+  margin: 0;
 }

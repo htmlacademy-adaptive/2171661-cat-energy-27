@@ -27,7 +27,7 @@
       </button>
     </div>
     <!--navigation-->
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed">
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--current">
           <a class="main-nav__link" href="./index.html">Главная</a>
@@ -47,184 +47,209 @@
       <h1 class="catalog-title">Каталог продукции</h1>
       <ul class="catalog-list">
         <li class="catalog-list__item product">
-          <a class="product__link" href="#">
-            <img class="product__link-image" src="./img/mobile/catalog/chiken500.png" width="68" height="86"
-              alt="корм с курицей 500гр.">
-          </a>
-          <a class="product__link" href="#">
-            <h2 class="product__link-title">cat energy pro 500г</h2>
-          </a>
-          <div class="product__description">
-            <div class="product-text">
-              <span class="product-text__item">Масса</span>
-              <span class="product-text__item">500 г</span>
-            </div>
-            <div class="product-text">
-              <span class="product-text__item">Вкус</span>
-              <span class="product-text__item">Курица</span>
-            </div>
-            <div class="product-text">
-              <span class="product-text__item">Цена</span>
-              <span class="product-text__item">700<span class="rub">&#8381;</span></span>
-            </div>
-          </div>
-          <a class="product-button button" href="#">заказать</a>
-        </li>
-        <li class="catalog-list__item product">
-          <a class="product__link" href="#">
-            <img class="product__link-image" src="./img/mobile/catalog/chiken1000.png" width="84" height="100"
-              alt="корм с курицей 1000гр.">
-          </a>
-          <a class="product__link" href="#">
-            <h2 class="product__link-title">cat energy pro 1000г</h2>
-          </a>
-          <div class="product__description">
-            <div class="product-text">
-              <span class="product-text__item">Масса</span>
-              <span class="product-text__item">1000 г</span>
-            </div>
-            <div class="product-text">
-              <span class="product-text__item">Вкус</span>
-              <span class="product-text__item">Курица</span>
-            </div>
-            <div class="product-text">
-              <span class="product-text__item">Цена</span>
-              <span class="product-text__item">1000<span class="rub">&#8381;</span></span>
+          <div class="product__wrapper">
+            <a class="product__image" href="#">
+              <img src="./img/mobile/catalog/chiken500.png" width="68" height="86" alt="корм с курицей 500гр.">
+            </a>
+            <div class="product__details">
+              <a class="product__link" href="#">
+                <h2 class="product__link-title">cat energy pro 500г</h2>
+              </a>
+              <div class="product__description">
+                <div class="product-text">
+                  <span class="product-text__item">Масса</span>
+                  <span class="product-text__item">500 г</span>
+                </div>
+                <div class="product-text">
+                  <span class="product-text__item">Вкус</span>
+                  <span class="product-text__item">Курица</span>
+                </div>
+                <div class="product-text">
+                  <span class="product-text__item">Цена</span>
+                  <span class="product-text__item">700<span class="rub">&#8381;</span></span>
+                </div>
+              </div>
             </div>
           </div>
           <a class="product-button button" href="#">заказать</a>
         </li>
         <li class="catalog-list__item product">
-          <a class="product__link" href="#">
-            <img class="product__link-image" src="./img/mobile/catalog/fish500.png" width="68" height="86"
-              alt="корм с рыбой 500гр.">
-          </a>
-          <a class="product__link" href="#">
-            <h2 class="product__link-title">cat energy pro 500г</h2>
-          </a>
-          <div class="product__description">
-            <div class="product-text">
-              <span class="product-text__item">Масса</span>
-              <span class="product-text__item">500 г</span>
-            </div>
-            <div class="product-text">
-              <span class="product-text__item">Вкус</span>
-              <span class="product-text__item">Рыба</span>
-            </div>
-            <div class="product-text">
-              <span class="product-text__item">Цена</span>
-              <span class="product-text__item">700<span class="rub">&#8381;</span></span>
-            </div>
-          </div>
-          <a class="product-button button" href="#">заказать</a>
-        </li>
-        <li class="catalog-list__item product">
-          <a class="product__link" href="#">
-            <img class="product__link-image" src="./img/mobile/catalog/fish1000.png" width="84" height="100"
-              alt="корм с рыбой 1000гр.">
-          </a>
-          <a class="product__link" href="#">
-            <h2 class="product__link-title">cat energy pro 1000г</h2>
-          </a>
-          <div class="product__description">
-            <div class="product-text">
-              <span class="product-text__item">Масса</span>
-              <span class="product-text__item">1000 г</span>
-            </div>
-            <div class="product-text">
-              <span class="product-text__item">Вкус</span>
-              <span class="product-text__item">Рыба</span>
-            </div>
-            <div class="product-text">
-              <span class="product-text__item">Цена</span>
-              <span class="product-text__item">1000<span class="rub">&#8381;</span></span>
+          <div class="product__wrapper">
+            <a class="product__image" href="#">
+              <img src="./img/mobile/catalog/chiken1000.png" width="84" height="100" alt="корм с курицей 1000гр.">
+            </a>
+            <div class="product__details">
+              <a class="product__link" href="#">
+                <h2 class="product__link-title">cat energy pro 1000г</h2>
+              </a>
+              <div class="product__description">
+                <div class="product-text">
+                  <span class="product-text__item">Масса</span>
+                  <span class="product-text__item">1000 г</span>
+                </div>
+                <div class="product-text">
+                  <span class="product-text__item">Вкус</span>
+                  <span class="product-text__item">Курица</span>
+                </div>
+                <div class="product-text">
+                  <span class="product-text__item">Цена</span>
+                  <span class="product-text__item">1000<span class="rub">&#8381;</span></span>
+                </div>
+              </div>
             </div>
           </div>
           <a class="product-button button" href="#">заказать</a>
         </li>
         <li class="catalog-list__item product">
-          <a class="product__link" href="#">
-            <img class="product__link-image" src="./img/mobile/catalog/buckwheat500.png" width="68" height="86"
-              alt="корм с гречкой 500гр.">
-          </a>
-          <a class="product__link" href="#">
-            <h2 class="product__link-title">cat energy slim 500г</h2>
-          </a>
-          <div class="product__description">
-            <div class="product-text">
-              <span class="product-text__item">Масса</span>
-              <span class="product-text__item">500 г</span>
-            </div>
-            <div class="product-text">
-              <span class="product-text__item">Вкус</span>
-              <span class="product-text__item">Гречка</span>
-            </div>
-            <div class="product-text">
-              <span class="product-text__item">Цена</span>
-              <span class="product-text__item">400<span class="rub">&#8381;</span></span>
-            </div>
-          </div>
-          <a class="product-button button" href="#">заказать</a>
-        </li>
-        <li class="catalog-list__item product">
-          <a class="product__link" href="#">
-            <img class="product__link-image" src="./img/mobile/catalog/buckwheat1000.png" width="84" height="100"
-              alt="корм с гречкой 1000гр.">
-          </a>
-          <a class="product__link" href="#">
-            <h2 class="product__link-title">cat energy slim 1000г</h2>
-          </a>
-          <div class="product__description">
-            <div class="product-text">
-              <span class="product-text__item">Масса</span>
-              <span class="product-text__item">1000 г</span>
-            </div>
-            <div class="product-text">
-              <span class="product-text__item">Вкус</span>
-              <span class="product-text__item">Гречка</span>
-            </div>
-            <div class="product-text">
-              <span class="product-text__item">Цена</span>
-              <span class="product-text__item">700<span class="rub">&#8381;</span></span>
+          <div class="product__wrapper">
+            <a class="product__image" href="#">
+              <img src="./img/mobile/catalog/fish500.png" width="68" height="86" alt="корм с рыбой 500гр.">
+            </a>
+            <div class="product__details">
+              <a class="product__link" href="#">
+                <h2 class="product__link-title">cat energy pro 500г</h2>
+              </a>
+              <div class="product__description">
+                <div class="product-text">
+                  <span class="product-text__item">Масса</span>
+                  <span class="product-text__item">500 г</span>
+                </div>
+                <div class="product-text">
+                  <span class="product-text__item">Вкус</span>
+                  <span class="product-text__item">Рыба</span>
+                </div>
+                <div class="product-text">
+                  <span class="product-text__item">Цена</span>
+                  <span class="product-text__item">700<span class="rub">&#8381;</span></span>
+                </div>
+              </div>
             </div>
           </div>
           <a class="product-button button" href="#">заказать</a>
         </li>
         <li class="catalog-list__item product">
-          <a class="product__link" href="#">
-            <img class="product__link-image" src="./img/mobile/catalog/rice500.png" width="68" height="86"
-              alt="корм с рисом 500гр.">
-          </a>
-          <a class="product__link" href="#">
-            <h2 class="product__link-title">cat energy slim 500г</h2>
-          </a>
-          <div class="product__description">
-            <div class="product-text">
-              <span class="product-text__item">Масса</span>
-              <span class="product-text__item">500 г</span>
+          <div class="product__wrapper">
+            <a class="product__image" href="#">
+              <img src="./img/mobile/catalog/fish1000.png" width="84" height="100" alt="корм с рыбой 1000гр.">
+            </a>
+            <div class="product__details">
+              <a class="product__link" href="#">
+                <h2 class="product__link-title">cat energy pro 1000г</h2>
+              </a>
+              <div class="product__description">
+                <div class="product-text">
+                  <span class="product-text__item">Масса</span>
+                  <span class="product-text__item">1000 г</span>
+                </div>
+                <div class="product-text">
+                  <span class="product-text__item">Вкус</span>
+                  <span class="product-text__item">Рыба</span>
+                </div>
+                <div class="product-text">
+                  <span class="product-text__item">Цена</span>
+                  <span class="product-text__item">1000<span class="rub">&#8381;</span></span>
+                </div>
+              </div>
             </div>
-            <div class="product-text">
-              <span class="product-text__item">Вкус</span>
-              <span class="product-text__item">Рис</span>
+          </div>
+          <a class="product-button button" href="#">заказать</a>
+        </li>
+        <li class="catalog-list__item product">
+          <div class="product__wrapper">
+            <a class="product__image" href="#">
+              <img src="./img/mobile/catalog/buckwheat500.png" width="68" height="86" alt="корм с гречкой 500гр.">
+            </a>
+            <div class="product__details">
+              <a class="product__link" href="#">
+                <h2 class="product__link-title">cat energy slim 500г</h2>
+              </a>
+              <div class="product__description">
+                <div class="product-text">
+                  <span class="product-text__item">Масса</span>
+                  <span class="product-text__item">500 г</span>
+                </div>
+                <div class="product-text">
+                  <span class="product-text__item">Вкус</span>
+                  <span class="product-text__item">Гречка</span>
+                </div>
+                <div class="product-text">
+                  <span class="product-text__item">Цена</span>
+                  <span class="product-text__item">400<span class="rub">&#8381;</span></span>
+                </div>
+              </div>
             </div>
-            <div class="product-text">
-              <span class="product-text__item">Цена</span>
-              <span class="product-text__item">500<span class="rub">&#8381;</span></span>
+          </div>
+          <a class="product-button button" href="#">заказать</a>
+        </li>
+        <li class="catalog-list__item product">
+          <div class="product__wrapper">
+            <a class="product__image" href="#">
+              <img src="./img/mobile/catalog/buckwheat1000.png" width="84" height="100" alt="корм с гречкой 1000гр.">
+            </a>
+            <div class="product__details">
+              <a class="product__link" href="#">
+                <h2 class="product__link-title">cat energy slim 1000г</h2>
+              </a>
+              <div class="product__description">
+                <div class="product-text">
+                  <span class="product-text__item">Масса</span>
+                  <span class="product-text__item">1000 г</span>
+                </div>
+                <div class="product-text">
+                  <span class="product-text__item">Вкус</span>
+                  <span class="product-text__item">Гречка</span>
+                </div>
+                <div class="product-text">
+                  <span class="product-text__item">Цена</span>
+                  <span class="product-text__item">700<span class="rub">&#8381;</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="product-button button" href="#">заказать</a>
+        </li>
+        <li class="catalog-list__item product">
+          <div class="product__wrapper">
+            <a class="product__image" href="#">
+              <img src="./img/mobile/catalog/rice500.png" width="68" height="86" alt="корм с рисом 500гр.">
+            </a>
+            <div class="product__details">
+              <a class="product__link" href="#">
+                <h2 class="product__link-title">cat energy slim 500г</h2>
+              </a>
+              <div class="product__description">
+                <div class="product-text">
+                  <span class="product-text__item">Масса</span>
+                  <span class="product-text__item">500 г</span>
+                </div>
+                <div class="product-text">
+                  <span class="product-text__item">Вкус</span>
+                  <span class="product-text__item">Рис</span>
+                </div>
+                <div class="product-text">
+                  <span class="product-text__item">Цена</span>
+                  <span class="product-text__item">500<span class="rub">&#8381;</span></span>
+                </div>
+              </div>
             </div>
           </div>
           <a class="product-button button" href="#">заказать</a>
         </li>
         <li class="catalog-list__item product product-last">
-          <svg class="product-last__icon" aria-hidden="true" focusable="false" width="30" height="30"
-            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path stroke="#D3D3D3" stroke-width="2" d="M15 0v30M30 15H0" />
-          </svg>
-          <h2 class="product-last__title">Показать еще 100500 товаров</h2>
-          <div class="product-last__description">
-            <div class="product-text">
-              <span class="product-text__item">На самом деле вкусов гораздо больше!</span>
+            <a class="product__image" href="#">
+              <svg class="product-last__icon" aria-hidden="true" focusable="false" width="30" height="30"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#D3D3D3" stroke-width="2" d="M15 0v30M30 15H0" />
+              </svg>
+            </a>
+            <div class="product__details">
+              <h2 class="product-last__title">Показать еще 100500 товаров</h2>
+              <div class="product-last__description">
+                <div class="product-text">
+                  <span class="product-text__item">На самом деле вкусов гораздо больше!</span>
+                </div>
+              </div>
             </div>
-          </div>
           <a class="product-button product-button-last button" href="#">показать все</a>
         </li>
       </ul>
@@ -275,7 +300,7 @@
           <span class="contacts__description-text">ул. Большая Конюшенная, д. 19/8</span>
           <br class="tablet-version-transfer">
           <span class="contacts__description-text">Санкт-Петербург</span>
-        </div>        <!--вот тут пока что не понятно как сделать дополнительный перенос строки только для планшетной версии-->
+        </div> <!--вот тут пока что не понятно как сделать дополнительный перенос строки только для планшетной версии-->
         <div class="map">
           <span class="visually-hidden">наше расположение на карте</span>
         </div>
@@ -340,8 +365,7 @@
             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#a)">
               <path
-                d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z"
-                />
+                d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z" />
             </g>
             <defs>
               <clipPath id="a1">

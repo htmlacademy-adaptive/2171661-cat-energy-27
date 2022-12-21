@@ -1,6 +1,9 @@
 .advantages {
-  width: 320px;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
   margin: 0 auto;
+  margin-bottom: 29px;
 }
 
 .advantages__title {
@@ -8,10 +11,23 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .advantages__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__list-item {
+  display: flex;
+}
+
+.advantages__list-image {
+  margin-bottom: 20px;
 }
 
 .advantages__list-text {
@@ -20,4 +36,5 @@
   line-height: 18px;
   font-weight: 400;
   color: @dark-grey;
+  margin-left: 20px;
 }

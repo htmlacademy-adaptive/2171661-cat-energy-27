@@ -1,16 +1,24 @@
 .example-card {
-  &__title {
-    font-family: @oswald;
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  &__description {
-    font-family: @lato;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 12px;
-  }
+.example-card__title {
+  font-family: @oswald;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 7.5px;
+  margin-top: 34.5px;
+}
+
+.example-card__description {
+  text-align: center;
+  font-family: @lato;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
 }

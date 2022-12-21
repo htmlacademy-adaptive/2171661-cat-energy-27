@@ -1,10 +1,21 @@
 .footer {
   background-color: @basic-grey;
+  min-height: 236px;
 }
 
 .footer__wrapper {
-  width: 320px;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
   margin: 0 auto;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 95px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .footer__social-icon {

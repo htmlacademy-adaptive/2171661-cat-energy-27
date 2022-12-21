@@ -1,5 +1,8 @@
 .main-header {
+  position: relative;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 320px;
   margin: 0 auto;
   min-height: 65px;
@@ -9,10 +12,21 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 20px;
-  margin-top: 3px;
+  width: 280px;
+  min-height: 65px;
+}
+
+.main-header__logo-link {
+  display: flex;
+  align-items: center;
 }
 
 .main-header__logo-image {
   margin-right: 56.66px;
 }
+
+.main-header__logo-button {
+  background-color: @white;
+  border: none;
+}
+

@@ -1,4 +1,6 @@
 .contacts {
+  display: flex;
+  min-height: 112px;
   &--grey {
     background-color: @basic-grey;
   }
@@ -10,16 +12,25 @@
   line-height: 20px;
   text-transform: uppercase;
   font-weight: 400;
+  margin: 0;
+  width: 139px;
 }
 
 .contacts__description {
+  width: 139px;
+}
+
+.contacts__description-text {
   font-family: @lato;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+  margin: 0;
 }
 
 .contacts__wrapper {
-  width: 320px;
+  display: flex;
+  align-items: center;
+  width: 280px;
   margin: 0 auto;
 }

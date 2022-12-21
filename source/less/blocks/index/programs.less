@@ -1,10 +1,17 @@
 .programs {
-  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto;
 }
 
 .programs__card {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
   background-color: @basic-grey;
+  margin-top: 20px;
+  padding-top: 30px;
 }
 
 .programs__card-title {
@@ -14,6 +21,22 @@
   color: @black;
   text-transform: uppercase;
   font-weight: 400;
+  margin: 0;
+  margin-left: 26px;
+
+  &--slim::before {
+    content: url("../img/mobile/program-slim-icon.svg");
+    background-color: @green;
+    border-radius: 50%;
+    background-position: center;
+  }
+
+  &--mass::before {
+    content: url("../img/mobile/program-mass-icon.svg");
+    background-color: @green;
+    border-radius: 50%;
+    background-position: center;
+  }
 }
 
 .programs__card-description {
@@ -22,6 +45,11 @@
   line-height: 18px;
   font-weight: 400;
   color: @dark-grey;
+  margin: 0;
+  margin-left: 20px;
+  margin-top: 29px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .programs__card-link {
@@ -32,4 +60,8 @@
   line-height: 16px;
   color: @black;
   font-weight: 400;
+  margin: 0;
+  margin-left: 19px;
+  margin-top: 19px;
+  margin-bottom: 22px;
 }

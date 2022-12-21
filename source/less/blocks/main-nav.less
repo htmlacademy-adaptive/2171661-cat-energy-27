@@ -1,17 +1,36 @@
 .main-nav {
+  width: 100%;
   margin: 0;
   padding: 0;
+  background-color: @white;
+
+  &--closed {
+    position: absolute;
+    top: 65px;
+  }
 }
 
-.main-nav__toggle {
-  background-color: @white;
-  border: none;
-  margin-top: 24px;
-  margin-right: 20px;
+.main-nav__list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-nav__item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   list-style-type: none;
+  min-height: 66px;
+  border-bottom: 1px solid @light-grey;
+
+  &:first-child {
+    border-top: 1px solid @light-grey;
+  }
 }
 
 .main-nav__link {

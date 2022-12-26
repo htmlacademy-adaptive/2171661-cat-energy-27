@@ -27,7 +27,7 @@
       </button>
     </div>
     <!--navigation-->
-    <nav class="main-nav main-nav--closed">
+    <nav class="main-nav main-nav-closed">
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--current">
           <a class="main-nav__link" href="./index.html">Главная</a>
@@ -236,6 +236,7 @@
           <a class="product-button button" href="#">заказать</a>
         </li>
         <li class="catalog-list__item product product-last">
+          <div class="product-last__wrapper">
             <a class="product__image" href="#">
               <svg class="product-last__icon" aria-hidden="true" focusable="false" width="30" height="30"
                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -250,39 +251,58 @@
                 </div>
               </div>
             </div>
+          </div>
           <a class="product-button product-button-last button" href="#">показать все</a>
         </li>
       </ul>
     </section>
     <!--additional-goods-->
     <section class="additional-goods">
-      <h2 class="additional-goods__title">Дополнительные товары</h2>
-      <ul class="additional-goods__list">
-        <li class="additional-goods__list-item">
-          <h3 class="additional-goods__list-item-title">сахарозаменитель</h3>
-          <span class="additional-goods__list-item-text">1 упаковка (100 г)</span>
-          <span class="additional-goods__list-item-text">200<span class="rub">&#8381;</span></span>
-          <a class="additional-goods__button button" href="#">заказать</a>
-        </li>
-        <li class="additional-goods__list-item">
-          <h3 class="additional-goods__list-item-title">питьевая вода</h3>
-          <span class="additional-goods__list-item-text">5 литров</span>
-          <span class="additional-goods__list-item-text">50<span class="rub">&#8381;</span></span>
-          <a class="additional-goods__button button" href="#">заказать</a>
-        </li>
-        <li class="additional-goods__list-item">
-          <h3 class="additional-goods__list-item-title">молоко</h3>
-          <span class="additional-goods__list-item-text">1 литр</span>
-          <span class="additional-goods__list-item-text">100<span class="rub">&#8381;</span></span>
-          <a class="additional-goods__button button" href="#">заказать</a>
-        </li>
-        <li class="additional-goods__list-item">
-          <h3 class="additional-goods__list-item-title">витамины</h3>
-          <span class="additional-goods__list-item-text">1 упаковка (30 г)</span>
-          <span class="additional-goods__list-item-text">300<span class="rub">&#8381;</span></span>
-          <a class="additional-goods__button button" href="#">заказать</a>
-        </li>
-      </ul>
+      <div class="additional-goods__wrapper">
+        <h2 class="additional-goods__title">Дополнительные товары</h2>
+        <ul class="additional-goods__list">
+          <li class="additional-goods__list-item">
+            <div class="additional-goods__list-item-wrapper">
+              <h3 class="additional-goods__list-item-title">сахарозаменитель</h3>
+              <div class="additional-goods__list-item-text-wrapper">
+                <span class="additional-goods__list-item-text">1 упаковка (100 г)</span>
+                <span class="additional-goods__list-item-text">200<span class="rub">&#8381;</span></span>
+              </div>
+            </div>
+            <a class="additional-goods__button button" href="#">заказать</a>
+          </li>
+          <li class="additional-goods__list-item">
+            <div class="additional-goods__list-item-wrapper">
+              <h3 class="additional-goods__list-item-title">питьевая вода</h3>
+              <div class="additional-goods__list-item-text-wrapper">
+                <span class="additional-goods__list-item-text">5 литров</span>
+                <span class="additional-goods__list-item-text">50<span class="rub">&#8381;</span></span>
+              </div>
+            </div>
+            <a class="additional-goods__button button" href="#">заказать</a>
+          </li>
+          <li class="additional-goods__list-item">
+            <div class="additional-goods__list-item-wrapper">
+              <h3 class="additional-goods__list-item-title">молоко</h3>
+              <div class="additional-goods__list-item-text-wrapper">
+                <span class="additional-goods__list-item-text">1 литр</span>
+                <span class="additional-goods__list-item-text">100<span class="rub">&#8381;</span></span>
+              </div>
+            </div>
+            <a class="additional-goods__button button" href="#">заказать</a>
+          </li>
+          <li class="additional-goods__list-item">
+            <div class="additional-goods__list-item-wrapper">
+              <h3 class="additional-goods__list-item-title">витамины</h3>
+              <div class="additional-goods__list-item-text-wrapper">
+                <span class="additional-goods__list-item-text">1 упаковка (30 г)</span>
+                <span class="additional-goods__list-item-text">300<span class="rub">&#8381;</span></span>
+              </div>
+            </div>
+            <a class="additional-goods__button button" href="#">заказать</a>
+          </li>
+        </ul>
+      </div>
     </section>
     <!--gift-->
     <section class="gift">

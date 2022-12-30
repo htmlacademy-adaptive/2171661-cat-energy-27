@@ -4,6 +4,9 @@
   width: 280px;
   margin: 0 auto;
   margin-bottom: 29px;
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
 }
 
 .advantages__title {
@@ -14,20 +17,90 @@
   margin: 0;
   margin-top: 20px;
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+  }
 }
 
 .advantages__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    min-height: 670px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .advantages__list-item {
   display: flex;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    position: relative;
+
+    &:nth-child(1)::before {
+      content: "1";
+      position: absolute;
+      font-family: @oswald;
+      font-size: 280px;
+      line-height: 280px;
+      color: @basic-grey;
+      top: -40px;
+      left: 118px;
+      z-index: -1;
+    }
+
+    &:nth-child(2)::before {
+      content: "2";
+      position: absolute;
+      font-family: @oswald;
+      font-size: 280px;
+      line-height: 280px;
+      color: @basic-grey;
+      top: -40px;
+      left: 118px;
+      z-index: -1;
+    }
+
+    &:nth-child(3)::before {
+      content: "3";
+      position: absolute;
+      font-family: @oswald;
+      font-size: 280px;
+      line-height: 280px;
+      color: @basic-grey;
+      top: -40px;
+      left: 118px;
+      z-index: -1;
+    }
+
+    &:nth-child(4)::before {
+      content: "4";
+      position: absolute;
+      font-family: @oswald;
+      font-size: 280px;
+      line-height: 280px;
+      color: @basic-grey;
+      top: -40px;
+      left: 118px;
+      z-index: -1;
+    }
+  }
 }
 
 .advantages__list-image {
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-bottom: 31px;
+  }
 }
 
 .advantages__list-text {
@@ -37,4 +110,10 @@
   font-weight: 400;
   color: @dark-grey;
   margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

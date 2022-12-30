@@ -2,6 +2,13 @@
   background-image: url("../img/promo-filter-image.png");
   background-repeat: repeat-x;
   min-height: 480px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url(../img/tablet/hero-background.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    min-height: 868px;
+  }
 }
 
 .hero__wrapper {
@@ -10,6 +17,12 @@
   align-items: center;
   width: 320px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    align-items: flex-start;
+    margin-left: 88px;
+  }
 }
 
 .hero__title {
@@ -22,6 +35,15 @@
   margin: 0;
   margin-top: 27px;
   margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: @black;
+    text-align: start;
+    margin-top: 62px;
+    margin-bottom: 41px;
+  }
 }
 
 .hero__description {
@@ -33,6 +55,13 @@
   color: @white;
   margin: 0;
   margin-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: @black;
+    margin-bottom: 49px;
+  }
 }
 
 .hero__button {
@@ -47,4 +76,8 @@
 
 .hero__image {
   margin-bottom: 3px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

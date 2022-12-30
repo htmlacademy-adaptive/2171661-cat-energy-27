@@ -5,6 +5,11 @@
   align-items: center;
   margin: 0 auto;
   min-height: 65px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .main-header__logo {
@@ -27,4 +32,8 @@
 .main-header__logo-button {
   background-color: @white;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

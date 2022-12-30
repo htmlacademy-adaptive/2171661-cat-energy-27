@@ -1,6 +1,10 @@
 .footer {
   background-color: @basic-grey;
   min-height: 236px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 147px;
+  }
 }
 
 .footer__wrapper {
@@ -8,6 +12,14 @@
   flex-direction: column;
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
 }
 
 .footer__logo {
@@ -16,6 +28,10 @@
   justify-content: center;
   min-height: 95px;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }
 
 .footer__social-icon {

@@ -13,6 +13,12 @@
   margin: 0;
   margin-bottom: 7.5px;
   margin-top: 34.5px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    margin-top: 0;
+  }
 }
 
 .example-card__description {
@@ -21,4 +27,14 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    width: 125px;
+  }
 }

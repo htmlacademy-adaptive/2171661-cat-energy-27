@@ -1,5 +1,12 @@
 .example-text {
   padding-top: 25px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    width: 708px;
+    margin-top: 43px;
+    margin-bottom: 69px;
+  }
 }
 
 .example-text__title {
@@ -10,6 +17,12 @@
   color: @black;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
 }
 
 .example-text__description {
@@ -20,4 +33,9 @@
   color: @dark-grey;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

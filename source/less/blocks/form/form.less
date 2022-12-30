@@ -1,6 +1,10 @@
 .form {
   width: 320px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
 }
 
 .form__wrapper {
@@ -12,6 +16,20 @@
   &:nth-child(1),
   &:nth-child(2) {
     border-bottom: 1px solid #d9d9d9;
+
+    @media (min-width: @tablet-width) {
+      border: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    &:nth-child(2) {
+      width: 630px;
+      min-height: 164px;
+      border: 1px solid #e7e7e7;
+      padding-top: 30px;
+    }
+    width: 631px;
   }
 }
 
@@ -22,6 +40,11 @@
   font-weight: 400;
   color: @black;
   margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form__input-button {
@@ -29,4 +52,11 @@
   flex-direction: column;
   align-items: center;
   width: 280px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    width: 631px;
+    gap: 64px;
+    margin-top: 54px;
+  }
 }

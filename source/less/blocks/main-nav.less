@@ -7,6 +7,11 @@
   &--closed {
     display: none;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 510px;
+    min-height: 34px;
+  }
 }
 
 .main-nav__list {
@@ -33,10 +38,16 @@
 
   &:first-child {
     border-top: 1px solid @light-grey;
+
+    @media (min-width: @tablet-width) {
+      border: none;
+    }
   }
 
   @media (min-width: @tablet-width) {
+    min-height: 34px;
     border: none;
+    justify-content: flex-end;
   }
 }
 
@@ -53,5 +64,11 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
+    padding-bottom: 8px;
+
+    &--current {
+      padding-top: 2px;
+      border-bottom: 2px solid @green;
+    }
   }
 }

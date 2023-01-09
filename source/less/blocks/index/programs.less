@@ -3,6 +3,12 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .programs__card {
@@ -15,6 +21,11 @@
 
   @media (min-width: @tablet-width) {
     width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    min-height: 374px;
   }
 }
 
@@ -37,6 +48,10 @@
     @media (min-width: @tablet-width) {
       display: none;
     }
+
+    @media (min-width: @desktop-width) {
+      display: inline;
+    }
   }
 
   &--mass::before {
@@ -48,6 +63,17 @@
     @media (min-width: @tablet-width) {
       display: none;
     }
+
+    @media (min-width: @desktop-width) {
+      display: inline;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 50px;
+    margin-left: 150px;
   }
 }
 
@@ -76,6 +102,10 @@
       position: absolute;
       bottom: -31px;
       left: 430px;
+
+      @media (min-width: @desktop-width) {
+        display: none;
+      }
     }
 
     &--mass::before {
@@ -86,7 +116,22 @@
       position: absolute;
       bottom: -10px;
       left: 375px;
+
+      @media (min-width: @desktop-width) {
+        display: none;
+      }
     }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 52px;
+      margin-top: 39px;
+      width: 457px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -102,4 +147,11 @@
   margin-left: 19px;
   margin-top: 19px;
   margin-bottom: 22px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 52px;
+    margin-top: 27px;
+  }
 }

@@ -10,6 +10,10 @@
   @media (min-width: @tablet-width) {
     min-height: 199px;
   }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
 }
 
 .contacts__title {
@@ -64,5 +68,14 @@
     width: 708px;
     justify-content: space-between;
     min-height: 199px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 565px;
+    min-height: 198px;
+    position: absolute;
+    top: 120px;
+    left: 240px;
+    background-color: @white;
   }
 }

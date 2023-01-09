@@ -10,6 +10,11 @@
     background-repeat: no-repeat;
     min-height: 868px;
   }
+
+  @media (min-width: @desktop-width) {
+    background-image: none;
+    min-height: 550px;
+  }
 }
 
 .hero__wrapper {
@@ -22,6 +27,11 @@
   @media (min-width: @tablet-width) {
     width: 708px;
     align-items: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding-left: 90px;
   }
 }
 

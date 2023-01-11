@@ -1,0 +1,32 @@
+.example-title {
+  padding-top: 25px;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    width: 708px;
+    margin-top: 43px;
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
+.example-title__text {
+  font-family: @oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: @black;
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
+}

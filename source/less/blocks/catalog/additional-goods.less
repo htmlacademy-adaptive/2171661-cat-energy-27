@@ -1,9 +1,107 @@
+.additional-goods {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
+.additional-goods__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 895px;
+  }
+}
+
 .additional-goods__title {
   font-family: @oswald;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: @black;
+  border-bottom: 1px solid @basic-grey2;
+  padding-bottom: 36px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0;
+    margin-top: 68px;
+    margin-bottom: 80px;
+    border: none;
+    margin-left: 39px;
+  }
+}
+
+.additional-goods__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.additional-goods__list-item {
+  border-bottom: 1px solid @basic-grey2;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 140px;
+    border: 1px solid @grey;
+
+    &:not(:last-child) {
+      border-bottom: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 70px;
+    border-right: none;
+    border-left: none;
+  }
+}
+
+.additional-goods__list-item-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 632px;
+  }
+}
+
+.additional-goods__list-item-text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-end;
+    width: 223px;
+    gap: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .additional-goods__list-item-title {
@@ -13,6 +111,14 @@
   font-weight: 400;
   text-transform: uppercase;
   color: @dark-grey3;
+  margin: 0;
+  margin-top: 13px;
+  margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additional-goods__list-item-text {
@@ -21,9 +127,31 @@
   line-height: 14px;
   font-weight: 400;
   color: @dark-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .additional-goods__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: @white;
   background-color: @green;
+  width: 280px;
+  min-height: 40px;
+  margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    width: 632px;
+    min-height: 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    width: 244px;
+    min-height: 40px;
+  }
 }

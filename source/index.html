@@ -3,35 +3,40 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
   <!--header-->
-  <header class="main-header">
-    <a href="./index.html" class="main-header__logo">
-      <img class="main-header__logo-image" src="./img/logo-mobile.svg" width="33" height="38"
-        alt="Логотип сайта Кэт энерджи">
-    </a>
-    <!--navigation-->
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+  <header class="main-header main-header--index">
+    <div class="main-header__logo">
+      <a href="./index.html" class="main-header__logo-link">
+        <img class="main-header__logo-image" src="./img/logo-mobile.svg" width="33" height="38"
+          alt="Логотип сайта Кэт энерджи">
+        <img class="main-header__logo-image" src="./img/logo-mobile-title.svg" width="101" height="18"
+          alt="Логотип сайта Кэт энерджи">
+      </a>
+      <button class="main-header__logo-button" type="button">
         <span class="visually-hidden">Открыть меню</span>
-        <svg class="main-nav__toggle-icon" aria-hidden="true" focusable="false" width="24" height="18"
+        <svg class="main-header__logo-icon" aria-hidden="true" focusable="false" width="24" height="18"
           fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" />
         </svg>
       </button>
+    </div>
+    <!--navigation-->
+    <nav class="main-nav main-nav-closed">
       <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--current">
-          <a class="main-nav__link" href="#">Главная</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--index main-nav__link--current main-nav__link--current-desktop" href="#">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="./catalog.html">Каталог продукции</a>
+          <a class="main-nav__link main-nav__link--index" href="./catalog.html">Каталог продукции</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="./form.html">Подбор программы</a>
+          <a class="main-nav__link main-nav__link--index" href="./form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -41,23 +46,27 @@
     <!--promo section-->
     <section class="promo">
       <div class="hero">
-        <h1 class="hero__title">Функциональное<br>питание для котов</h1>
-        <span class="hero__description">занялся собой? займись котом!</span>
-        <img class="hero__image" src="./img/promo-product-image.png" alt="Образец питания" width="280" height="270">
-        <a class="button hero__button" href="./form.html">
-          Подобрать программу
-        </a>
+        <div class="hero__wrapper">
+          <h1 class="hero__title">Функциональное<br>питание для котов</h1>
+          <span class="hero__description">занялся собой? займись котом!</span>
+          <img class="hero__image" src="./img/promo-product-image.png" alt="Образец питания" width="280" height="270">
+          <a class="button hero__button" href="./form.html">
+            Подобрать программу
+          </a>
+        </div>
       </div>
       <div class="programs">
         <div class="programs__card">
-          <h2 class="programs__card-title">похудение</h2>
-          <span class="programs__card-description">Ваш кот весит больше собаки и почти утратил способность лазить по
+          <h2 class="programs__card-title programs__card-title--slim">похудение</h2>
+          <span class="programs__card-description programs__card-description--slim">Ваш кот весит больше собаки и почти
+            утратил способность лазить по
             деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</span>
           <a class="programs__card-link" href="./catalog.html">каталог slim</a>
         </div>
         <div class="programs__card">
-          <h2 class="programs__card-title">набор массы</h2>
-          <span class="programs__card-description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
+          <h2 class="programs__card-title programs__card-title--mass">набор массы</h2>
+          <span class="programs__card-description programs__card-description--mass">Заработать авторитет среди дворовых
+            котов и даже собак? Серия Cat
             Energy
             Pro поможет вашему коту нарастить необходимые мышцы!</span>
           <a class="programs__card-link" href="./catalog.html">каталог pro</a>
@@ -67,65 +76,85 @@
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__list-item">
-            <img class="advantages__list-image" src="./img/advantages-icon-leaf.png" alt="Изображение питательных веществ" width="60" height="60">
-            <span class="advantages__list-text">Функциональное питание<br>содержит только полезные<br>питательные вещества.</span>
+            <img class="advantages__list-image" src="./img/advantages-icon-leaf.png"
+              alt="Изображение питательных веществ" width="60" height="60">
+            <span class="advantages__list-text">Функциональное питание<br>содержит только полезные<br>питательные
+              вещества.</span>
           </li>
           <li class="advantages__list-item">
-            <img class="advantages__list-image" src="./img/advantages-icon-water.png" alt="стакан воды" width="60" height="60">
+            <img class="advantages__list-image" src="./img/advantages-icon-water.png" alt="стакан воды" width="60"
+              height="60">
             <span class="advantages__list-text">Выпускается в виде порошка,<br>который нужно лишь залить<br>кипятком и
-            готово.</span>
+              готово.</span>
           </li>
           <li class="advantages__list-item">
-            <img class="advantages__list-image" src="./img/advantages-icon-food.png" alt="столовые приборы" width="60" height="60">
-            <span class="advantages__list-text">Замените один-два приема<br>обычной еды на наше<br>функциональное питание.</span>
+            <img class="advantages__list-image" src="./img/advantages-icon-food.png" alt="столовые приборы" width="60"
+              height="60">
+            <span class="advantages__list-text">Замените один-два приема<br>обычной еды на наше<br>функциональное
+              питание.</span>
           </li>
           <li class="advantages__list-item">
-            <img class="advantages__list-image" src="./img/advantages-icon-clock.png" alt="изображение часов" width="60" height="60">
-            <span class="advantages__list-text">Уже через месяц<br>наслаждайтесь изменениями<br>к лучшему вашего питомца!</span>
+            <img class="advantages__list-image" src="./img/advantages-icon-clock.png" alt="изображение часов" width="60"
+              height="60">
+            <span class="advantages__list-text">Уже через месяц<br>наслаждайтесь изменениями<br>к лучшему вашего
+              питомца!</span>
           </li>
         </ul>
       </div>
     </section>
     <!--example section-->
     <section class="example">
+      <div class="example-title">
+        <h2 class="example-title__text">Живой пример</h2>
+      </div>
       <div class="example__wrapper">
-        <div class="example-text">
-          <h2 class="example-text__title">Живой пример</h2>
-          <span class="example-text__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-            Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
-            по-прежнему спит по 16 часов в день.</span>
-        </div>
-        <div class="example-cards">
-          <div class="example-cards__item example-card">
-            <h3 class="example-card__title">5 кг</h3>
-            <span class="example-card__description">снижение<br>веса</span>
+        <div class="example__wrapper-desktop">
+          <div class="example__wrapper-description">
+            <span class="example__wrapper-description-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный
+              корм на
+              Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
+              по-прежнему спит по 16 часов в день.</span>
+            <div class="example-cards-wrapper">
+              <div class="example-cards">
+                <div class="example-cards__item example-card">
+                  <h3 class="example-card__title">5 кг</h3>
+                  <span class="example-card__description">снижение веса</span>
+                </div>
+                <div class="example-cards__item example-card">
+                  <h3 class="example-card__title">60 дней</h3>
+                  <span class="example-card__description">затрачено времени</span>
+                </div>
+              </div>
+              <div class="example-costs">
+                <span class="example-costs__text">затраты на питание:</span>
+                <span class="example-costs__text"> 15 000 руб.</span>
+              </div>
+            </div>
           </div>
-          <div class="example-cards__item example-card">
-            <h3 class="example-card__title">60 дней</h3>
-            <span class="example-card__description">затрачено<br>времени</span>
+          <div class="cat-slider">
+            <div class="cat-slider__scale">
+              <button class="cat-slider__toggle" type="button">
+                <span class="visually-hidden">сравнить результат</span>
+              </button>
+            </div>
           </div>
         </div>
-        <span class="example-cards__item example-costs">затраты на питание: 15 000 руб.</span>
-        <div class="example-cards__item cat-slider">
-          <div class="cat-slider__scale">
-            <button class="cat-slider__toggle" type="button">
-              <span class="visually-hidden">сравнить результат</span>
-            </button>
-          </div>
-        </div>
+      </div>
       </div>
     </section>
     <!--contacts-->
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="contacts__title">приглашаем<br>к сотрудничеству<br>дилеров!</h2>
-        <span class="contacts__description">ул. Большая Конюшенная, д. 19/8</span>
-        <br class="tablet-version-transfer">
-        <span class="contacts__description">Санкт-Петербург</span>
-        <!--вот тут пока что не понятно как сделать дополнительный перенос строки только для планшетной версии-->
-        <div class="map">
-          <span class="visually-hidden">наше расположение на карте</span>
+        <div class="contacts__description">
+          <span class="contacts__description-text">ул. Большая Конюшенная, д. 19/8</span>
+          <br class="tablet-version-transfer">
+          <span class="contacts__description-text">Санкт-Петербург</span>
         </div>
+        <!--вот тут пока что не понятно как сделать дополнительный перенос строки только для планшетной версии-->
+      </div>
+      <div class="map">
+        <span class="visually-hidden">наше расположение на карте</span>
       </div>
     </section>
   </main>
@@ -139,11 +168,6 @@
             <path
               d="M1.603 22.051A9.498 9.498 0 0 1 0 16.308V7.795a9.63 9.63 0 0 1 1.502-5.846C2.604.615 4.307 0 6.811 0s4.106.615 5.108 1.744a7.487 7.487 0 0 1 1.502 5.025v2.052H8.513V6.46a5.157 5.157 0 0 0-.3-2.05 1.463 1.463 0 0 0-.579-.63 1.415 1.415 0 0 0-.823-.191c-.701 0-1.202.205-1.403.718a6.774 6.774 0 0 0-.3 2.256v10.974a4.334 4.334 0 0 0 .4 2.154c.2.513.702.718 1.403.718.7 0 1.102-.205 1.302-.718.228-.693.33-1.423.3-2.154v-2.461h4.908v2.051a7.98 7.98 0 0 1-1.502 5.128c-1.002 1.231-2.705 1.847-5.108 1.847-2.404-.103-4.207-.718-5.208-2.052ZM19.33.308h5.71l4.206 23.384h-4.607l-.802-4.923h-3.305l-.801 4.923h-4.708L19.33.308Zm4.107 15.384-1.202-9.128-1.202 9.128h2.404ZM32.751 4.205h-3.405V.308h11.918v3.794H37.86v19.59h-5.108V4.205ZM50.379.308h8.814v2.461h-5.71v7.692h4.608v2.36h-4.607v8.615h5.709v2.359h-8.914V.308h.1ZM61.797.308H64l6.51 15.487V.308h2.604v23.384h-2.003l-6.61-16v16h-2.704V.308ZM76.119.308h8.814v2.461h-5.71v7.692h4.608v2.36h-4.607v8.615h5.709v2.359h-8.814V.308ZM87.537.308h4.607a7.873 7.873 0 0 1 5.108 1.436c1.102.923 1.602 2.564 1.602 4.717 0 2.975-.901 4.821-2.804 5.436l3.205 11.693H96.15l-3.005-10.975h-2.503V23.59h-3.205V.308h.1Zm4.407 10.05a4.302 4.302 0 0 0 2.904-.82c.601-.512.902-1.538.902-3.077a6.772 6.772 0 0 0-.3-2.256 2.583 2.583 0 0 0-1.103-1.23 4.473 4.473 0 0 0-2.203-.411h-1.402v7.692h1.202v.103ZM102.861 21.949a10.566 10.566 0 0 1-1.402-5.95V8.206c-.025-1.486.143-2.97.5-4.41a5.204 5.204 0 0 1 1.903-2.667 6.421 6.421 0 0 1 3.706-.923c2.103 0 3.606.513 4.507 1.641a7.982 7.982 0 0 1 1.402 5.128v.82h-3.004v-.717a15.503 15.503 0 0 0-.201-2.564 2.056 2.056 0 0 0-.801-1.334 3.04 3.04 0 0 0-1.903-.512 2.955 2.955 0 0 0-2.003.615 2.349 2.349 0 0 0-.801 1.641 19.734 19.734 0 0 0-.201 2.77v8.717a9.527 9.527 0 0 0 .601 3.898c.401.82 1.202 1.128 2.404 1.128.475.06.956-.024 1.384-.243a2.45 2.45 0 0 0 1.02-.988 9.635 9.635 0 0 0 .701-4.102V14.46h-2.905v-2.359h5.809v11.59h-2.003l-.3-2.666a4.18 4.18 0 0 1-1.554 2.21 4.016 4.016 0 0 1-2.553.764 4.907 4.907 0 0 1-2.406-.47 5.037 5.037 0 0 1-1.9-1.581ZM119.987 15.487 115.08.41h3.004l3.506 11.282L124.995.41H128l-4.908 15.077v8.205h-3.004v-8.205h-.101Z" />
           </g>
-          <defs>
-            <clipPath id="a">
-              <path d="M0 0h128v24H0z" />
-            </clipPath>
-          </defs>
         </svg>
       </div>
       <ul class="footer__social-list social-list">
@@ -187,8 +211,7 @@
             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#a)">
               <path
-                d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z"
-                />
+                d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z" />
             </g>
             <defs>
               <clipPath id="a1">

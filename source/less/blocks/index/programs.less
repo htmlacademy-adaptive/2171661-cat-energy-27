@@ -1,32 +1,157 @@
 .programs {
-  &__card {
-    background-color: @basic-grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.programs__card {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  background-color: @basic-grey;
+  margin-top: 20px;
+  padding-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
   }
 
-  &__card-title {
-    font-family: @oswald;
-    font-size: 24px;
-    line-height: 37px;
-    color: @black;
-    text-transform: uppercase;
-    font-weight: 400;
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    min-height: 374px;
+  }
+}
+
+.programs__card-title {
+  font-family: @oswald;
+  font-size: 24px;
+  line-height: 37px;
+  color: @black;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+  margin-left: 26px;
+
+  &--slim::before {
+    content: url("../img/mobile/program-slim-icon.svg");
+    background-color: @green;
+    border-radius: 50%;
+    background-position: center;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: inline;
+    }
   }
 
-  &__card-description {
-    font-family: @lato;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    color: @dark-grey;
+  &--mass::before {
+    content: url("../img/mobile/program-mass-icon.svg");
+    background-color: @green;
+    border-radius: 50%;
+    background-position: center;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: inline;
+    }
   }
 
-  &__card-link {
-    font-family: @oswald;
-    text-transform: uppercase;
-    text-decoration: none;
+  @media (min-width: @desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 50px;
+    margin-left: 150px;
+  }
+}
+
+.programs__card-description {
+  font-family: @lato;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: @dark-grey;
+  margin: 0;
+  margin-left: 20px;
+  margin-top: 29px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    width: 340px;
+    position: relative;
+
+    &--slim::after {
+      content: url("../img/tablet/program-slim-icon.svg");
+      background-color: @green;
+      border-radius: 50%;
+      background-position: center;
+      position: absolute;
+      bottom: -31px;
+      left: 430px;
+
+      @media (min-width: @desktop-width) {
+        display: none;
+      }
+    }
+
+    &--mass::before {
+      content: url("../img/tablet/program-mass-icon.svg");
+      background-color: @green;
+      border-radius: 50%;
+      background-position: center;
+      position: absolute;
+      bottom: -10px;
+      left: 375px;
+
+      @media (min-width: @desktop-width) {
+        display: none;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 52px;
+      margin-top: 39px;
+      width: 457px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
     font-size: 16px;
-    line-height: 16px;
-    color: @black;
-    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+.programs__card-link {
+  font-family: @oswald;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+  color: @black;
+  font-weight: 400;
+  margin: 0;
+  margin-left: 19px;
+  margin-top: 19px;
+  margin-bottom: 22px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 52px;
+    margin-top: 27px;
   }
 }

@@ -1,7 +1,30 @@
+.product-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 7px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #cdcdcd;
+
+    &--last {
+      border: none;
+      width: 200px;
+      text-align: center;
+      margin-bottom: 63px;
+    }
+  }
+}
+
 .product-text__item {
   font-family: @lato;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
   color: @dark-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
 }

@@ -47,44 +47,46 @@
       <h1 class="form-title">Подбор программы</h1>
       <h2 class="form-title-description">Заполните анкету, и мы подберем<br>программу питания для вашего кота</h2>
       <form class="form" action="#" method="get">
-        <fieldset class="form__wrapper">
-          <legend class="visually-hidden">Данные вашего кота</legend>
-          <ul class="form-list">
-            <li class="form-list__item">
-              <label class="form-list__item-label" for="cat-name">Имя:*</label>
-              <input class="form-list__item-input" type="text" id="cat-name" placeholder="БАРСИК">
-            </li>
-            <li class="form-list__item">
-              <label class="form-list__item-label" for="cat-weight">Вес (кг):*</label>
-              <input class="form-list__item-input" type="number" id="cat-weight" placeholder="7">
-            </li>
-            <li class="form-list__item">
-              <label class="form-list__item-label" for="cat-age">Возраст (лет):</label>
-              <input class="form-list__item-input" type="number" id="cat-age" placeholder="7">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form__wrapper">
-          <legend class="visually-hidden">Что нужно вашему питомцу ?</legend>
-          <ul class="form-list">
-            <li class="form-list__item">
-              <input class="form-list__item-radio" type="radio" name="program-selection" value="похудение" id="slim"
-                checked>
-              <label class="form-list__item-radio-label" for="slim">похудение</label>
-            </li>
-            <li class="form-list__item">
-              <input class="form-list__item-radio" type="radio" name="program-selection" value="набор" id="fat">
-              <label class="form-list__item-radio-label" for="fat">Набор массы</label>
-            </li>
-            <li class="form-list__item">
-              <input class="form-list__item-radio" type="radio" name="program-selection" value="совет" id="advice">
-              <label class="form-list__item-radio-label" for="advice">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="form__wrapper-desktop">
+          <fieldset class="form__wrapper">
+            <legend class="visually-hidden">Данные вашего кота</legend>
+            <ul class="form-list form-list--cat">
+              <li class="form-list__item">
+                <label class="form-list__item-label" for="cat-name">Имя:*</label>
+                <input class="form-list__item-input" type="text" id="cat-name" placeholder="БАРСИК">
+              </li>
+              <li class="form-list__item">
+                <label class="form-list__item-label" for="cat-weight">Вес (кг):*</label>
+                <input class="form-list__item-input" type="number" id="cat-weight" placeholder="7">
+              </li>
+              <li class="form-list__item">
+                <label class="form-list__item-label" for="cat-age">Возраст (лет):</label>
+                <input class="form-list__item-input" type="number" id="cat-age" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__wrapper form__wrapper-program">
+            <legend class="visually-hidden">Что нужно вашему питомцу ?</legend>
+            <ul class="form-list form-list--program">
+              <li class="form-list__item">
+                <input class="form-list__item-radio" type="radio" name="program-selection" value="похудение" id="slim"
+                  checked>
+                <label class="form-list__item-radio-label" for="slim">похудение</label>
+              </li>
+              <li class="form-list__item">
+                <input class="form-list__item-radio" type="radio" name="program-selection" value="набор" id="fat">
+                <label class="form-list__item-radio-label" for="fat">Набор массы</label>
+              </li>
+              <li class="form-list__item">
+                <input class="form-list__item-radio" type="radio" name="program-selection" value="совет" id="advice">
+                <label class="form-list__item-radio-label" for="advice">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="form__wrapper">
           <legend class="form__wrapper-title">Контактные данные (владельца кота)</legend>
-          <ul class="form-list">
+          <ul class="form-list form-list--contacts">
             <li class="form-list__item">
               <label class="form-list__item-label" for="owner-email">E-mail:*</label>
               <input class="form-list__item-input form-list__item-input--dark" type="email" id="owner-email"

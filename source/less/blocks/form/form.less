@@ -5,6 +5,10 @@
   @media (min-width: @tablet-width) {
     width: 708px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .form__wrapper {
@@ -33,6 +37,13 @@
   }
 }
 
+.form__wrapper-desktop {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .form__wrapper-title {
   font-family: @oswald;
   font-size: 24px;
@@ -58,5 +69,10 @@
     width: 631px;
     gap: 64px;
     margin-top: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 810px;
+    margin-bottom: 82px;
   }
 }

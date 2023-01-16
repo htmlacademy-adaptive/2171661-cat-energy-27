@@ -18,15 +18,110 @@
   background-color: @basic-grey;
   margin-top: 20px;
   padding-top: 30px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 708px;
+    min-height: 372px;
   }
 
   @media (min-width: @desktop-width) {
     width: 570px;
     min-height: 374px;
   }
+
+  &--slim::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    top: 24px;
+    left: 22px;
+    background-color: @green;
+    border-radius: 50%;
+    background-position: center;
+    position: absolute;
+
+    @media (min-width: @tablet-width) {
+      width: 200px;
+      height: 200px;
+      top: 100px;
+      left: 450px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 100px;
+      height: 100px;
+      top: 35px;
+      left: 35px;
+    }
+  }
+
+  &--slim::after {
+    content: url("../img/mobile/program-slim-icon.svg");
+    position: absolute;
+    top: 21px;
+    left: 30px;
+
+    @media (min-width: @tablet-width) {
+      content: url("../img/tablet/program-slim-icon.svg");
+      top: 90px;
+      left: 480px;
+    }
+
+    @media (min-width: @desktop-width) {
+      content: url("../img/desktop/program-slim-icon.svg");
+      top: 30px;
+      left: 50px;
+    }
+  }
+
+  &--mass::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    top: 24px;
+    left: 22px;
+    background-color: @green;
+    border-radius: 50%;
+    background-position: center;
+    position: absolute;
+
+    @media (min-width: @tablet-width) {
+      width: 200px;
+      height: 200px;
+      top: 100px;
+      left: 450px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 100px;
+      height: 100px;
+      top: 35px;
+      left: 35px;
+    }
+
+  }
+
+  &--mass::after {
+    content: url("../img/mobile/program-mass-icon.svg");
+    position: absolute;
+    top: 35px;
+    left: 10px;
+
+    @media (min-width: @tablet-width) {
+      content: url("../img/tablet/program-mass-icon.svg");
+      top: 150px;
+      left: 420px;
+    }
+
+    @media (min-width: @desktop-width) {
+      content: url("../img/desktop/program-mass-icon.svg");
+      position: absolute;
+      top: 60px;
+      left: 20px;
+    }
+  }
+
 }
 
 .programs__card-title {
@@ -37,37 +132,8 @@
   text-transform: uppercase;
   font-weight: 400;
   margin: 0;
-  margin-left: 26px;
-
-  &--slim::before {
-    content: url("../img/mobile/program-slim-icon.svg");
-    background-color: @green;
-    border-radius: 50%;
-    background-position: center;
-
-    @media (min-width: @tablet-width) {
-      display: none;
-    }
-
-    @media (min-width: @desktop-width) {
-      display: inline;
-    }
-  }
-
-  &--mass::before {
-    content: url("../img/mobile/program-mass-icon.svg");
-    background-color: @green;
-    border-radius: 50%;
-    background-position: center;
-
-    @media (min-width: @tablet-width) {
-      display: none;
-    }
-
-    @media (min-width: @desktop-width) {
-      display: inline;
-    }
-  }
+  text-align: center;
+  margin-left: 20px;
 
   @media (min-width: @desktop-width) {
     font-size: 36px;

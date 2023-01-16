@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   background-color: @white;
+  position: absolute;
+  top: 65px;
 
   &--closed {
     display: none;
@@ -11,11 +13,13 @@
   @media (min-width: @tablet-width) {
     width: 510px;
     min-height: 34px;
+    position: static;
   }
 
   @media (min-width: @desktop-width) {
     background-color: transparent;
     width: 620px;
+    position: static;
   }
 }
 

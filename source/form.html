@@ -48,7 +48,7 @@
       <h2 class="form-title-description">Заполните анкету, и мы подберем<br>программу питания для вашего кота</h2>
       <form class="form" action="#" method="get">
         <div class="form__wrapper-desktop">
-          <fieldset class="form__wrapper">
+          <fieldset class="form__wrapper form__wrapper--cat-data">
             <legend class="visually-hidden">Данные вашего кота</legend>
             <ul class="form-list form-list--cat">
               <li class="form-list__item">
@@ -65,27 +65,36 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__wrapper form__wrapper-program">
+          <fieldset class="form__wrapper form__wrapper--program">
             <legend class="visually-hidden">Что нужно вашему питомцу ?</legend>
             <ul class="form-list form-list--program">
-              <li class="form-list__item">
-                <input class="form-list__item-radio" type="radio" name="program-selection" value="похудение" id="slim"
-                  checked>
-                <label class="form-list__item-radio-label" for="slim">похудение</label>
+              <li class="form-list__item form-list__item--radio-list">
+                <label class="form-list__item-radio-label" for="slim">
+                  <input class="form-list__item-radio visually-hidden" type="radio" name="program-selection" value="похудение" id="slim"
+                    checked>
+                  <span class="form-list__item-radio-mark"></span>
+                  <span class="form-list__item-radio-text">похудение</span>
+                </label>
               </li>
-              <li class="form-list__item">
-                <input class="form-list__item-radio" type="radio" name="program-selection" value="набор" id="fat">
-                <label class="form-list__item-radio-label" for="fat">Набор массы</label>
+              <li class="form-list__item form-list__item--radio-list">
+                <label class="form-list__item-radio-label" for="fat">
+                  <input class="form-list__item-radio visually-hidden" type="radio" name="program-selection" value="набор" id="fat">
+                  <span class="form-list__item-radio-mark"></span>
+                  <span class="form-list__item-radio-text">Набор массы</span>
+                </label>
               </li>
-              <li class="form-list__item">
-                <input class="form-list__item-radio" type="radio" name="program-selection" value="совет" id="advice">
-                <label class="form-list__item-radio-label" for="advice">Не знаю (Нужен ваш совет)</label>
+              <li class="form-list__item form-list__item--radio-list">
+                <label class="form-list__item-radio-label" for="advice">
+                  <input class="form-list__item-radio visually-hidden" type="radio" name="program-selection" value="совет" id="advice">
+                  <span class="form-list__item-radio-mark"></span>
+                  <span class="form-list__item-radio-text">Не знаю (Нужен ваш совет)</span>
+                </label>
               </li>
             </ul>
           </fieldset>
         </div>
         <fieldset class="form__wrapper">
-          <legend class="form__wrapper-title">Контактные данные (владельца кота)</legend>
+          <legend class="form__wrapper-title form__wrapper-title--contacts">Контактные данные (владельца кота)</legend>
           <ul class="form-list form-list--contacts">
             <li class="form-list__item">
               <label class="form-list__item-label" for="owner-email">E-mail:*</label>
@@ -107,20 +116,32 @@
           <legend class="form__wrapper-title">Дополнительно</legend>
           <ul class="form-list form-list--checkbox">
             <li class="form-list__item">
-              <input class="form-list__item-checkbox" type="checkbox" name="сахарозаменитель" id="sugar">
-              <label class="form-list__item-checkbox-label" for="sugar">сахарозаменитель</label>
+              <label class="form-list__item-checkbox-label" for="sugar">
+              <input class="form-list__item-checkbox visually-hidden" type="checkbox" name="сахарозаменитель" id="sugar" checked>
+              <span class="form-list__item-checkbox-mark"></span>
+              <span class="form-list__item-checkbox-text">сахарозаменитель</span>
+              </label>
             </li>
             <li class="form-list__item">
-              <input class="form-list__item-checkbox" type="checkbox" name="вода" id="water">
-              <label class="form-list__item-checkbox-label" for="water">питьевая вода</label>
+              <label class="form-list__item-checkbox-label" for="water">
+              <input class="form-list__item-checkbox visually-hidden" type="checkbox" name="вода" id="water">
+              <span class="form-list__item-checkbox-mark"></span>
+              <span class="form-list__item-checkbox-text">питьевая вода</span>
+              </label>
             </li>
             <li class="form-list__item">
-              <input class="form-list__item-checkbox" type="checkbox" name="молоко" id="milk">
-              <label class="form-list__item-checkbox-label" for="milk">молоко</label>
+              <label class="form-list__item-checkbox-label" for="milk">
+              <input class="form-list__item-checkbox visually-hidden" type="checkbox" name="молоко" id="milk">
+              <span class="form-list__item-checkbox-mark"></span>
+              <span class="form-list__item-checkbox-text">молоко</span>
+              </label>
             </li>
             <li class="form-list__item">
-              <input class="form-list__item-checkbox" type="checkbox" name="витамины" id="vitamins">
-              <label class="form-list__item-checkbox-label" for="vitamins">витамины</label>
+              <label class="form-list__item-checkbox-label" for="vitamins">
+              <input class="form-list__item-checkbox visually-hidden" type="checkbox" name="витамины" id="vitamins">
+              <span class="form-list__item-checkbox-mark"></span>
+              <span class="form-list__item-checkbox-text">витамины</span>
+              </label>
             </li>
           </ul>
         </fieldset>

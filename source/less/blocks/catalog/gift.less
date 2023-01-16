@@ -17,7 +17,9 @@
 }
 
 .gift__wrapper {
-  background-color: rgba(104, 183, 56, 0.85);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/mobile/catalog/gift-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 280px;
   min-height: 290px;
   margin: 0 auto;
@@ -31,6 +33,7 @@
     min-height: 200px;
     display: flex;
     flex-direction: row;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/tablet/catalog/gift-background.png");
   }
 
   @media (min-width: @desktop-width) {
@@ -38,6 +41,7 @@
     width: 245px;
     min-height: 289px;
     margin: 0;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/desktop/catalog/gift-background.png");
   }
 }
 

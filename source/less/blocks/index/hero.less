@@ -13,7 +13,7 @@
 
   @media (min-width: @desktop-width) {
     background-image: none;
-    min-height: 550px;
+    min-height: 640px;
   }
 }
 
@@ -30,8 +30,24 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
-    padding-left: 90px;
+    width: 1440px;
+    background-image: url("../img/desktop/index-hero-image.png");
+    background-position: 560px 27px;
+    background-repeat: no-repeat;
+    min-height: 550px;
+
+    &::before {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 50%;
+      height: 694px;
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/desktop/index-background.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }
 
@@ -54,6 +70,11 @@
     margin-top: 62px;
     margin-bottom: 41px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 190px;
+    margin-top: 110px;
+  }
 }
 
 .hero__description {
@@ -72,6 +93,10 @@
     color: @black;
     margin-bottom: 49px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 190px;
+  }
 }
 
 .hero__button {
@@ -82,6 +107,10 @@
   background-color: @green;
   min-width: 280px;
   min-height: 44px;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 190px;
+  }
 }
 
 .hero__image {

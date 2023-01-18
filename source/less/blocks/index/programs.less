@@ -99,7 +99,6 @@
       top: 35px;
       left: 35px;
     }
-
   }
 
   &--mass::after {
@@ -121,7 +120,6 @@
       left: 20px;
     }
   }
-
 }
 
 .programs__card-title {
@@ -202,6 +200,7 @@
 }
 
 .programs__card-link {
+  position: relative;
   font-family: @oswald;
   text-transform: uppercase;
   text-decoration: none;
@@ -213,6 +212,20 @@
   margin-left: 19px;
   margin-top: 19px;
   margin-bottom: 22px;
+
+  &::after {
+    content: url("../img/arrow-icon.svg");
+    position: absolute;
+    right: 140px;
+
+    @media (min-width: @tablet-width) {
+      right: 565px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 375px;
+    }
+  }
 
   @media (min-width: @desktop-width) {
     font-size: 20px;

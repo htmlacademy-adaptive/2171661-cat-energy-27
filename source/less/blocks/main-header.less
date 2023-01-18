@@ -41,7 +41,18 @@
   margin-right: 56.66px;
 
   @media (min-width: @tablet-width) {
-    margin-right: 12px;
+    margin: 0;
+    width: 174px;
+    height: 51.68px;
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 59px;
   }
 }
 

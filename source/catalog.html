@@ -10,13 +10,17 @@
 
 <body class="page__body">
   <!--header-->
-  <header class="main-header">
+  <header class="main-header main-header--index">
     <div class="main-header__logo">
       <a href="./index.html" class="main-header__logo-link">
-        <img class="main-header__logo-image" src="./img/logo-mobile.svg" width="33" height="38"
-          alt="Логотип сайта Кэт энерджи">
-        <img class="main-header__logo-image" src="./img/logo-mobile-title.svg" width="101" height="18"
-          alt="Логотип сайта Кэт энерджи">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/desktop/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="./img/tablet/logo-tablet.svg">
+          <img class="main-header__logo-image" src="./img/logo-mobile.svg" width="33" height="38"
+            alt="Логотип сайта Кэт энерджи">
+        </picture>
+        <img class="main-header__logo-image main-header__logo-image--mobile" src="./img/logo-mobile-title.svg"
+          width="101" height="18" alt="Логотип сайта Кэт энерджи">
       </a>
       <button class="main-header__logo-button" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -49,7 +53,13 @@
         <li class="catalog-list__item product">
           <div class="product__wrapper">
             <a class="product__image" href="#">
-              <img src="./img/mobile/catalog/chiken500.png" width="68" height="86" alt="корм с курицей 500гр.">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="./img/tablet/catalog/chiken500.png 1x, ./img/tablet/catalog/chiken500@2x.png 2x" width="161px"
+                  height="172px">
+                <img src="./img/mobile/catalog/chiken500.png" srcset="./img/mobile/catalog/chiken500@2x.png 2x"
+                  width="68" height="86" alt="корм с курицей 500гр.">
+              </picture>
             </a>
             <div class="product__details">
               <a class="product__link" href="#">
@@ -76,7 +86,13 @@
         <li class="catalog-list__item product">
           <div class="product__wrapper">
             <a class="product__image" href="#">
-              <img src="./img/mobile/catalog/chiken1000.png" width="84" height="100" alt="корм с курицей 1000гр.">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="./img/tablet/catalog/chiken1000.png 1x, ./img/tablet/catalog/chiken1000@2x.png 2x"
+                  width="168px" height="206px">
+                <img src="./img/mobile/catalog/chiken1000.png" srcset="./img/mobile/catalog/chiken1000@2x.png 2x"
+                  width="84" height="100" alt="корм с курицей 1000гр.">
+              </picture>
             </a>
             <div class="product__details">
               <a class="product__link" href="#">
@@ -103,7 +119,13 @@
         <li class="catalog-list__item product">
           <div class="product__wrapper">
             <a class="product__image" href="#">
-              <img src="./img/mobile/catalog/fish500.png" width="68" height="86" alt="корм с рыбой 500гр.">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="./img/tablet/catalog/fish500.png 1x, ./img/tablet/catalog/fish500@2x.png 2x" width="161px"
+                  height="172px">
+                <img src="./img/mobile/catalog/fish500.png" srcset="./img/mobile/catalog/fish500@2x.png 2x" width="68"
+                  height="86" alt="корм с рыбой 500гр.">
+              </picture>
             </a>
             <div class="product__details">
               <a class="product__link" href="#">
@@ -130,7 +152,12 @@
         <li class="catalog-list__item product">
           <div class="product__wrapper">
             <a class="product__image" href="#">
-              <img src="./img/mobile/catalog/fish1000.png" width="84" height="100" alt="корм с рыбой 1000гр.">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="./img/tablet/catalog/fish1000.png 1x, ./img/tablet/catalog/fish1000@2x.png 2x" width="168px"
+                  height="206px">
+                <img src="./img/mobile/catalog/fish1000.png" srcset="./img/mobile/catalog/fish1000@2x.png 2x" width="84"
+                  height="100" alt="корм с рыбой 1000гр.">
             </a>
             <div class="product__details">
               <a class="product__link" href="#">
@@ -157,7 +184,13 @@
         <li class="catalog-list__item product">
           <div class="product__wrapper">
             <a class="product__image" href="#">
-              <img src="./img/mobile/catalog/buckwheat500.png" width="68" height="86" alt="корм с гречкой 500гр.">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="./img/tablet/catalog/buckwheat500.png 1x, ./img/tablet/catalog/buckwheat500@2x.png 2x"
+                  width="161px" height="172px">
+                <img src="./img/mobile/catalog/buckwheat500.png" srcset="./img/mobile/catalog/buckwheat500@2x.png 2x"
+                  width="68" height="86" alt="корм с гречкой 500гр.">
+              </picture>
             </a>
             <div class="product__details">
               <a class="product__link" href="#">
@@ -184,7 +217,13 @@
         <li class="catalog-list__item product">
           <div class="product__wrapper">
             <a class="product__image" href="#">
-              <img src="./img/mobile/catalog/buckwheat1000.png" width="84" height="100" alt="корм с гречкой 1000гр.">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="./img/tablet/catalog/buckwheat1000.png 1x, ./img/tablet/catalog/buckwheat1000@2x.png 2x"
+                  width="168px" height="206px">
+                <img src="./img/mobile/catalog/buckwheat1000.png" srcset="./img/mobile/catalog/buckwheat1000@2x.png 2x"
+                  width="84" height="100" alt="корм с гречкой 1000гр.">
+              </picture>
             </a>
             <div class="product__details">
               <a class="product__link" href="#">
@@ -211,7 +250,13 @@
         <li class="catalog-list__item product">
           <div class="product__wrapper">
             <a class="product__image" href="#">
-              <img src="./img/mobile/catalog/rice500.png" width="68" height="86" alt="корм с рисом 500гр.">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="./img/tablet/catalog/rice500.png 1x, ./img/tablet/catalog/rice500@2x.png 2x" width="161px"
+                  height="172px">
+                <img src="./img/mobile/catalog/rice500.png" srcset="./img/mobile/catalog/rice500@2x.png 2x" width="68"
+                  height="86" alt="корм с рисом 500гр.">
+              </picture>
             </a>
             <div class="product__details">
               <a class="product__link" href="#">

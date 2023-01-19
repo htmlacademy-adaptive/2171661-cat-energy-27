@@ -57,19 +57,33 @@
   }
 
   &--slim::after {
-    content: url("../img/mobile/program-slim-icon.svg");
+    content: "";
+    background-image: url("../img/mobile/program-slim-icon.svg");
+    background-repeat: no-repeat;
+    width: 36.02px;
+    height: 50px;
     position: absolute;
     top: 21px;
     left: 30px;
 
     @media (min-width: @tablet-width) {
-      content: url("../img/tablet/program-slim-icon.svg");
+      content: "";
+      background-image: url("../img/mobile/program-slim-icon.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 140.07px;
+      height: 194px;
       top: 90px;
       left: 480px;
     }
 
     @media (min-width: @desktop-width) {
-      content: url("../img/desktop/program-slim-icon.svg");
+      content: "";
+      background-image: url("../img/mobile/program-slim-icon.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 70.03px;
+      height: 97px;
       top: 30px;
       left: 50px;
     }
@@ -102,19 +116,31 @@
   }
 
   &--mass::after {
-    content: url("../img/mobile/program-mass-icon.svg");
+    content: "";
+    background-image: url("../img/mobile/program-mass-icon.svg");
+    width: 67.03px;
+    height: 28.08px;
+    background-repeat: no-repeat;
     position: absolute;
     top: 35px;
     left: 10px;
 
     @media (min-width: @tablet-width) {
-      content: url("../img/tablet/program-mass-icon.svg");
+      content: "";
+      background-image: url("../img/mobile/program-mass-icon.svg");
+      background-size: cover;
+      width: 268.13px;
+      height: 112.32px;
       top: 150px;
       left: 420px;
     }
 
     @media (min-width: @desktop-width) {
-      content: url("../img/desktop/program-mass-icon.svg");
+      content: "";
+      background-image: url("../img/mobile/program-mass-icon.svg");
+      background-size: cover;
+      width: 134.06px;
+      height: 56.16px;
       position: absolute;
       top: 60px;
       left: 20px;
@@ -212,19 +238,12 @@
   margin-left: 19px;
   margin-top: 19px;
   margin-bottom: 22px;
+  align-self: start;
 
   &::after {
     content: url("../img/arrow-icon.svg");
     position: absolute;
-    right: 140px;
-
-    @media (min-width: @tablet-width) {
-      right: 565px;
-    }
-
-    @media (min-width: @desktop-width) {
-      right: 375px;
-    }
+    margin-left: 12px;
   }
 
   @media (min-width: @desktop-width) {

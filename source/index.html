@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -13,10 +17,14 @@
   <header class="main-header main-header--index">
     <div class="main-header__logo">
       <a href="./index.html" class="main-header__logo-link">
-        <img class="main-header__logo-image" src="./img/logo-mobile.svg" width="33" height="38"
-          alt="Логотип сайта Кэт энерджи">
-        <img class="main-header__logo-image" src="./img/logo-mobile-title.svg" width="101" height="18"
-          alt="Логотип сайта Кэт энерджи">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/desktop/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="./img/tablet/logo-tablet.svg">
+          <img class="main-header__logo-image" src="./img/logo-mobile.svg" width="33" height="38"
+            alt="Логотип сайта Кэт энерджи">
+        </picture>
+        <img class="main-header__logo-image main-header__logo-image--mobile" src="./img/logo-mobile-title.svg"
+          width="101" height="18" alt="Логотип сайта Кэт энерджи">
       </a>
       <button class="main-header__logo-button" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -53,7 +61,14 @@
         <div class="hero__wrapper">
           <h1 class="hero__title">Функциональное<br>питание для котов</h1>
           <span class="hero__description">занялся собой? займись котом!</span>
-          <img class="hero__image" src="./img/promo-product-image.png" alt="Образец питания" width="280" height="270">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="./img/promo-product-image-desktop.png 1x, ./img/promo-product-image-desktop2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="./img/promo-product-image-tablet.png 1x, ./img/promo-product-image-tablet2x.png 2x">
+            <img class="hero__image" src="./img/promo-product-image.png" srcset="./img/promo-product-image2x.png 2x"
+              alt="Образец питания" width="280" height="270">
+          </picture>
           <a class="button hero__button" href="./form.html">
             Подобрать программу
           </a>
@@ -128,10 +143,29 @@
             </div>
           </div>
           <div class="cat-slider">
-            <div class="cat-slider__scale">
-              <button class="cat-slider__toggle" type="button">
+            <div class="cat-slider__wrapper">
+              <div class="cat-slider__left cat-slider__image">
+              </div>
+              <div class="cat-slider__scale cat-slider__scale--mobile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="256" fill="none">
+                  <rect width="4" height="256" x="18" fill="currentColor" rx="2" />
+                  <rect width="38" height="38" x="1" y="109" fill="#fff" rx="19" />
+                  <path fill="currentColor" d="m16 119-8 9 8 9v-18ZM32 128l-8-9v18l8-9Z" />
+                  <rect width="38" height="38" x="1" y="109" stroke="currentColor" stroke-width="2" rx="19" />
+                </svg>
                 <span class="visually-hidden">сравнить результат</span>
-              </button>
+              </div>
+              <div class="cat-slider__scale cat-slider__scale--tablet">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="512" fill="none">
+                  <rect width="4" height="512" x="18" fill="currentColor" rx="2" />
+                  <rect width="38" height="38" x="1" y="237" fill="#fff" rx="19" />
+                  <path fill="currentColor" d="m16 247-8 9 8 9v-18ZM32 256l-8-9v18l8-9Z" />
+                  <rect width="38" height="38" x="1" y="237" stroke="currentColor" stroke-width="2" rx="19" />
+                </svg>
+                <span class="visually-hidden">сравнить результат</span>
+              </div>
+              <div class="cat-slider__right cat-slider__image">
+              </div>
             </div>
           </div>
         </div>

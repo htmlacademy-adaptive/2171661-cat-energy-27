@@ -6,17 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <!--header-->
-  <header class="main-header">
+  <header class="main-header main-header--index">
     <div class="main-header__logo">
       <a href="./index.html" class="main-header__logo-link">
-        <img class="main-header__logo-image" src="./img/logo-mobile.svg" width="33" height="38"
-          alt="Логотип сайта Кэт энерджи">
-        <img class="main-header__logo-image" src="./img/logo-mobile-title.svg" width="101" height="18"
-          alt="Логотип сайта Кэт энерджи">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/desktop/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="./img/tablet/logo-tablet.svg">
+          <img class="main-header__logo-image" src="./img/logo-mobile.svg" width="33" height="38"
+            alt="Логотип сайта Кэт энерджи">
+        </picture>
+        <img class="main-header__logo-image main-header__logo-image--mobile" src="./img/logo-mobile-title.svg"
+          width="101" height="18" alt="Логотип сайта Кэт энерджи">
       </a>
       <button class="main-header__logo-button" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -70,22 +78,24 @@
             <ul class="form-list form-list--program">
               <li class="form-list__item form-list__item--radio-list">
                 <label class="form-list__item-radio-label" for="slim">
-                  <input class="form-list__item-radio visually-hidden" type="radio" name="program-selection" value="похудение" id="slim"
-                    checked>
+                  <input class="form-list__item-radio visually-hidden" type="radio" name="program-selection"
+                    value="похудение" id="slim" checked>
                   <span class="form-list__item-radio-mark"></span>
                   <span class="form-list__item-radio-text">похудение</span>
                 </label>
               </li>
               <li class="form-list__item form-list__item--radio-list">
                 <label class="form-list__item-radio-label" for="fat">
-                  <input class="form-list__item-radio visually-hidden" type="radio" name="program-selection" value="набор" id="fat">
+                  <input class="form-list__item-radio visually-hidden" type="radio" name="program-selection"
+                    value="набор" id="fat">
                   <span class="form-list__item-radio-mark"></span>
                   <span class="form-list__item-radio-text">Набор массы</span>
                 </label>
               </li>
               <li class="form-list__item form-list__item--radio-list">
                 <label class="form-list__item-radio-label" for="advice">
-                  <input class="form-list__item-radio visually-hidden" type="radio" name="program-selection" value="совет" id="advice">
+                  <input class="form-list__item-radio visually-hidden" type="radio" name="program-selection"
+                    value="совет" id="advice">
                   <span class="form-list__item-radio-mark"></span>
                   <span class="form-list__item-radio-text">Не знаю (Нужен ваш совет)</span>
                 </label>
@@ -117,30 +127,31 @@
           <ul class="form-list form-list--checkbox">
             <li class="form-list__item">
               <label class="form-list__item-checkbox-label" for="sugar">
-              <input class="form-list__item-checkbox visually-hidden" type="checkbox" name="сахарозаменитель" id="sugar" checked>
-              <span class="form-list__item-checkbox-mark"></span>
-              <span class="form-list__item-checkbox-text">сахарозаменитель</span>
+                <input class="form-list__item-checkbox visually-hidden" type="checkbox" name="сахарозаменитель"
+                  id="sugar" checked>
+                <span class="form-list__item-checkbox-mark"></span>
+                <span class="form-list__item-checkbox-text">сахарозаменитель</span>
               </label>
             </li>
             <li class="form-list__item">
               <label class="form-list__item-checkbox-label" for="water">
-              <input class="form-list__item-checkbox visually-hidden" type="checkbox" name="вода" id="water">
-              <span class="form-list__item-checkbox-mark"></span>
-              <span class="form-list__item-checkbox-text">питьевая вода</span>
+                <input class="form-list__item-checkbox visually-hidden" type="checkbox" name="вода" id="water">
+                <span class="form-list__item-checkbox-mark"></span>
+                <span class="form-list__item-checkbox-text">питьевая вода</span>
               </label>
             </li>
             <li class="form-list__item">
               <label class="form-list__item-checkbox-label" for="milk">
-              <input class="form-list__item-checkbox visually-hidden" type="checkbox" name="молоко" id="milk">
-              <span class="form-list__item-checkbox-mark"></span>
-              <span class="form-list__item-checkbox-text">молоко</span>
+                <input class="form-list__item-checkbox visually-hidden" type="checkbox" name="молоко" id="milk">
+                <span class="form-list__item-checkbox-mark"></span>
+                <span class="form-list__item-checkbox-text">молоко</span>
               </label>
             </li>
             <li class="form-list__item">
               <label class="form-list__item-checkbox-label" for="vitamins">
-              <input class="form-list__item-checkbox visually-hidden" type="checkbox" name="витамины" id="vitamins">
-              <span class="form-list__item-checkbox-mark"></span>
-              <span class="form-list__item-checkbox-text">витамины</span>
+                <input class="form-list__item-checkbox visually-hidden" type="checkbox" name="витамины" id="vitamins">
+                <span class="form-list__item-checkbox-mark"></span>
+                <span class="form-list__item-checkbox-text">витамины</span>
               </label>
             </li>
           </ul>

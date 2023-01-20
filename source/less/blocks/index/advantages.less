@@ -7,6 +7,7 @@
 
   @media (min-width: @tablet-width) {
     width: 708px;
+    margin-bottom: 5px;
   }
 
   @media (min-width: @desktop-width) {
@@ -27,6 +28,8 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 72px;
+    margin-left: 1px;
+    margin-top: 46px;
   }
 
   @media (min-width: @desktop-width) {
@@ -43,9 +46,11 @@
   row-gap: 27px;
 
   @media (min-width: @tablet-width) {
-    min-height: 670px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 230px 241px;
+    grid-template-rows: 280px 280px;
+    row-gap: 38px;
+    column-gap: 155px;
   }
 
   @media (min-width: @desktop-width) {
@@ -59,25 +64,25 @@
   position: relative;
 
   &:nth-child(1)::after {
-    content: url("../img/advantages-icon-leaf.png");
+    content: url("../img/advantages-icon-leaf.svg");
     position: absolute;
     top: -3px;
   }
 
   &:nth-child(2)::after {
-    content: url("../img/advantages-icon-water.png");
+    content: url("../img/advantages-icon-water.svg");
     position: absolute;
     top: -3px;
   }
 
   &:nth-child(3)::after {
-    content: url("../img/advantages-icon-food.png");
+    content: url("../img/advantages-icon-food.svg");
     position: absolute;
     top: -3px;
   }
 
   &:nth-child(4)::after {
-    content: url("../img/advantages-icon-clock.png");
+    content: url("../img/advantages-icon-clock.svg");
     position: absolute;
     top: -3px;
   }
@@ -106,7 +111,7 @@
       line-height: 280px;
       color: @basic-grey;
       top: -40px;
-      left: 118px;
+      left: 110px;
       z-index: -1;
     }
 
@@ -118,7 +123,7 @@
       line-height: 280px;
       color: @basic-grey;
       top: -40px;
-      left: 118px;
+      left: 114px;
       z-index: -1;
     }
 
@@ -130,7 +135,7 @@
       line-height: 280px;
       color: @basic-grey;
       top: -40px;
-      left: 118px;
+      left: 112px;
       z-index: -1;
     }
   }
@@ -157,6 +162,7 @@
     margin: 0;
     font-size: 16px;
     line-height: 24px;
-    margin-top: 91px;
+    margin-top: 111px;
+    margin-left: -1px;
   }
 }

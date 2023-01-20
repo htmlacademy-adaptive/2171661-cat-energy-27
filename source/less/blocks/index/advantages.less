@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 29px;
+  min-height: 449px;
 
   @media (min-width: @tablet-width) {
     width: 708px;
@@ -20,7 +20,7 @@
   line-height: 40px;
   font-weight: 400;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 18px;
   margin-bottom: 40px;
 
   @media (min-width: @tablet-width) {
@@ -38,6 +38,9 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 27px;
 
   @media (min-width: @tablet-width) {
     min-height: 670px;
@@ -58,21 +61,25 @@
   &:nth-child(1)::after {
     content: url("../img/advantages-icon-leaf.png");
     position: absolute;
+    top: -3px;
   }
 
   &:nth-child(2)::after {
     content: url("../img/advantages-icon-water.png");
     position: absolute;
+    top: -3px;
   }
 
   &:nth-child(3)::after {
     content: url("../img/advantages-icon-food.png");
     position: absolute;
+    top: -3px;
   }
 
   &:nth-child(4)::after {
     content: url("../img/advantages-icon-clock.png");
     position: absolute;
+    top: -3px;
   }
 
   @media (min-width: @tablet-width) {
@@ -145,7 +152,6 @@
   font-weight: 400;
   color: @dark-grey;
   margin-left: 80px;
-  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     margin: 0;

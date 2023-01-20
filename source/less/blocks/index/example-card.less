@@ -13,6 +13,22 @@
   margin: 0;
   margin-bottom: 7.5px;
   margin-top: 34.5px;
+  position: relative;
+
+  &--weight::after {
+    content: url("../img/mobile/example-border.svg");
+    position: absolute;
+    top: -16px;
+    left: -43px;
+  }
+
+  &--days::after {
+    content: url("../img/mobile/example-border.svg");
+    position: absolute;
+    top: -16px;
+    left: -20px;
+  }
+
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
@@ -31,6 +47,8 @@
   align-items: center;
   justify-content: center;
   width: 80px;
+  z-index: 1;
+  background-color: #eaeaea;
 
   @media (min-width: @tablet-width) {
     font-size: 14px;

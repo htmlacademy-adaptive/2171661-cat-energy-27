@@ -34,6 +34,10 @@
     margin-left: 70px;
     margin-top: -2px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 79px;
+  }
 }
 
 .contacts__description {
@@ -43,6 +47,12 @@
   @media (min-width: @tablet-width) {
     width: 310px;
     margin-top: -10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -6px;
+    margin-right: 48px;
+    width: 440px;
   }
 }
 
@@ -59,6 +69,12 @@
     flex-direction: row-reverse;
     text-align: right;
     margin-right: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    text-align: left;
+    margin: 0;
   }
 }
 
@@ -80,8 +96,9 @@
     width: 565px;
     min-height: 198px;
     position: absolute;
-    top: 120px;
-    left: -1px;
+    top: 95px;
+    left: 1px;
     background-color: @white;
+    z-index: 1;
   }
 }

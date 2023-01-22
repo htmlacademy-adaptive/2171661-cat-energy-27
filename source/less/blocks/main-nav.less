@@ -5,8 +5,10 @@
   background-color: @white;
   top: 65px;
 
-  &--closed {
-    display: none;
+  @media (max-width: @mobile-width-only) {
+    &--closed {
+      display: none;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -36,6 +38,12 @@
     top: 1px;
     left: 31px;
     flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 512px;
+    left: 141px;
+    top: 4px;
   }
 }
 

@@ -8,6 +8,14 @@
   margin: 0;
   padding: 0;
 
+  &--cat {
+    margin-bottom: 21px;
+  }
+
+  &--checkbox {
+    min-height: 184px;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -49,20 +57,24 @@
   align-items: center;
 
   @media (max-width: @mobile-width-only) {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
   }
 }
 
 .form-list__item--radio-list {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .form-list__item-input {
-  min-height: 45px;
-  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: @oswald;
+  min-height: 42px;
   border: 1px solid #e7e7e7;
   color: @dark-grey;
   width: 100%;
+  margin-right: 40px;
+  padding-left: 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -104,7 +116,7 @@
     width: 30px;
     height: 30px;
     top: -7px;
-    left: -65px;
+    left: -48px;
   }
 }
 
@@ -135,7 +147,7 @@
   margin-left: 80px;
 
   @media (max-width: @mobile-width-only) {
-    margin-left: 65px;
+    margin-left: 47px;
   }
 }
 
@@ -162,14 +174,14 @@
   @media (max-width: @mobile-width-only) {
     width: 30px;
     height: 30px;
-    top: -5px;
-    left: -15px;
+    top: -7px;
+    left: -47px;
   }
 }
 
 .form-list__item-checkbox[type="checkbox"] + .form-list__item-checkbox-mark {
   border: 1px solid @grey;
-  left: -60px;
+  left: -51px;
 }
 
 .form-list__item-checkbox[type="checkbox"]:checked + .form-list__item-checkbox-mark::before {
@@ -187,7 +199,8 @@
 
 .form-list__item-checkbox-label {
   position: relative;
-  margin-left: 60px;
+  margin-left: 46px;
+  margin-bottom: 10px;
 
   @media (max-width: @mobile-width-only) {
     margin-left: 50px;
@@ -201,4 +214,5 @@
 .form-list__item-input--dark {
   border: 1px solid @grey;
   text-transform: uppercase;
+  padding-left: 12px;
 }

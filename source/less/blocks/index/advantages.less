@@ -69,24 +69,40 @@
     content: url("../img/advantages-icon-leaf.svg");
     position: absolute;
     top: -3px;
+
+    @media (max-width: @mobile-width-only) {
+      content: url("../img/mobile/advantages-icon-leaf.svg");
+    }
   }
 
   &:nth-child(2)::after {
     content: url("../img/advantages-icon-water.svg");
     position: absolute;
     top: -3px;
+
+    @media (max-width: @mobile-width-only) {
+      content: url("../img/mobile/advantages-icon-water.svg");
+    }
   }
 
   &:nth-child(3)::after {
     content: url("../img/advantages-icon-food.svg");
     position: absolute;
     top: -3px;
+
+    @media (max-width: @mobile-width-only) {
+      content: url("../img/mobile/advantages-icon-food.svg");
+    }
   }
 
   &:nth-child(4)::after {
     content: url("../img/advantages-icon-clock.svg");
     position: absolute;
     top: -3px;
+
+    @media (max-width: @mobile-width-only) {
+      content: url("../img/mobile/advantages-icon-clock.svg");
+    }
   }
 
   @media (min-width: @tablet-width) {

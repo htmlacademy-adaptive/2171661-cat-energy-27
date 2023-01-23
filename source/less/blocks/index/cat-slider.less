@@ -32,8 +32,18 @@
   background-image: url("../img/mobile/fat-cat.png");
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mobile/fat-cat@2x.png");
+    background-size: 280px 256px;
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../img/tablet/fat-cat.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablet/fat-cat@2x.png");
+      background-size: 560px 512px;
+    }
   }
 }
 
@@ -42,8 +52,18 @@
   background-position: right;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mobile/slim-cat@2x.png");
+    background-size: 280px 256px;
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../img/tablet/slim-cat.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablet/slim-cat@2x.png");
+      background-size: 560px 512px;
+    }
   }
 }
 

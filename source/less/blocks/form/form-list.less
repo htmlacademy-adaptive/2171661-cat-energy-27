@@ -24,8 +24,10 @@
       width: 631px;
       display: grid;
       grid-template-columns: 50% 50%;
-      row-gap: 42px;
-      column-gap: 32px;
+      column-gap: 28px;
+      margin-left: 16px;
+      margin-top: -8px;
+      align-content: space-evenly;
     }
   }
 
@@ -46,8 +48,9 @@
 
     &--checkbox {
       width: 1220px;
-      display: flex;
-      justify-content: space-between;
+      margin-top: -41px;
+      column-gap: 19px;
+      grid-template-columns: 25% 25% 25% 25%;
     }
   }
 }
@@ -63,6 +66,10 @@
 
 .form-list__item--radio-list {
   margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .form-list__item-input {
@@ -80,9 +87,10 @@
     font-size: 20px;
     line-height: 30px;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     margin-top: 10px;
     padding-left: 20px;
+    min-height: 48px;
   }
 }
 
@@ -90,6 +98,14 @@
   color: @dark-grey;
   white-space: nowrap;
   margin-right: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 14px;
+  }
 }
 
 .form-list__item-radio {
@@ -149,6 +165,10 @@
   @media (max-width: @mobile-width-only) {
     margin-left: 47px;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 89px;
+  }
 }
 
 .form-list__item-radio-text {
@@ -182,6 +202,11 @@
 .form-list__item-checkbox[type="checkbox"] + .form-list__item-checkbox-mark {
   border: 1px solid @grey;
   left: -51px;
+
+  @media (min-width: @tablet-width) {
+    left: -61px;
+    top: -7px;
+  }
 }
 
 .form-list__item-checkbox[type="checkbox"]:checked + .form-list__item-checkbox-mark::before {
@@ -215,4 +240,13 @@
   border: 1px solid @grey;
   text-transform: uppercase;
   padding-left: 12px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 446px;
+    padding-left: 26px;
+  }
 }

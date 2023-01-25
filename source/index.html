@@ -13,6 +13,12 @@
 </head>
 
 <body class="page__body">
+  <!-- sprite -->
+  <svg style="display: none;">
+    <symbol viewbox="0 0 24 18" id="icon-burger">
+      <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" />
+    </symbol>
+  </svg>
   <!--header-->
   <header class="main-header main-header--index">
     <div class="main-header__logo">
@@ -28,14 +34,13 @@
       </a>
       <button class="main-header__logo-button" type="button">
         <span class="visually-hidden">Открыть меню</span>
-        <svg class="main-header__logo-icon" aria-hidden="true" focusable="false" width="24" height="18"
-          fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" />
+        <svg class="main-header__logo-icon" width="24" height="18">
+          <use href="#icon-burger"></use>
         </svg>
       </button>
     </div>
     <!--navigation-->
-    <nav class="main-nav main-nav-closed">
+    <nav class="main-nav main-nav--closed">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -76,14 +81,14 @@
       </div>
       <div class="programs">
         <div class="programs__card programs__card--slim">
-          <h2 class="programs__card-title">похудение</h2>
+          <h2 class="programs__card-title programs__card-title--slim">похудение</h2>
           <span class="programs__card-description">Ваш кот весит больше собаки и почти
             утратил способность лазить по
             деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</span>
           <a class="programs__card-link" href="./catalog.html">каталог slim</a>
         </div>
         <div class="programs__card programs__card--mass">
-          <h2 class="programs__card-title">набор массы</h2>
+          <h2 class="programs__card-title programs__card-title--mass">набор массы</h2>
           <span class="programs__card-description">Заработать авторитет среди дворовых
             котов и даже собак? Серия Cat
             Energy
@@ -107,7 +112,7 @@
               питание.</span>
           </li>
           <li class="advantages__list-item">
-            <span class="advantages__list-text">Уже через месяц<br>наслаждайтесь изменениями<br>к лучшему вашего
+            <span class="advantages__list-text">Уже через месяц наслаждайтесь<br>изменениями к лучшему<br>вашего
               питомца!</span>
           </li>
         </ul>
@@ -128,11 +133,11 @@
             <div class="example-cards-wrapper">
               <div class="example-cards">
                 <div class="example-cards__item example-card">
-                  <h3 class="example-card__title">5 кг</h3>
+                  <h3 class="example-card__title example-card__title--weight">5 кг</h3>
                   <span class="example-card__description">снижение веса</span>
                 </div>
                 <div class="example-cards__item example-card">
-                  <h3 class="example-card__title">60 дней</h3>
+                  <h3 class="example-card__title example-card__title--days">60 дней</h3>
                   <span class="example-card__description">затрачено времени</span>
                 </div>
               </div>

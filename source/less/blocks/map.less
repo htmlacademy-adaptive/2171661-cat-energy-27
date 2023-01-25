@@ -3,6 +3,7 @@
   width: 320px;
   background-image: url("../img/mobile/map.png");
   background-repeat: no-repeat;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 768px;
@@ -16,5 +17,24 @@
     height: 400px;
     background-image: url("../img/desktop/map.png");
     background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: url("../img/mobile/map-pin.png");
+    position: absolute;
+    top: 138px;
+    left: 134px;
+
+    @media (min-width: @tablet-width) {
+      content: url("../img/tablet/map-pin.png");
+      position: absolute;
+      top: 145px;
+      left: 333px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 131px;
+      left: 907px;
+    }
   }
 }

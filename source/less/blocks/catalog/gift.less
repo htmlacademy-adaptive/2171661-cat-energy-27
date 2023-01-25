@@ -7,10 +7,12 @@
   @media (min-width: @tablet-width) {
     width: 708px;
     min-height: 200px;
+    margin-top: 71px;
+    margin-bottom: 77px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 0;
+    margin-bottom: -3px;
     display: flex;
     flex-direction: row-reverse;
   }
@@ -52,12 +54,33 @@
   font-weight: 400;
   color: @white;
   text-align: center;
+  margin-bottom: 18px;
+  margin-right: 2px;
 
   @media (min-width: @tablet-width) {
-    text-align: end;
+    text-align: start;
+    margin: 0;
+    margin-top: 2px;
+    margin-right: -6px;
   }
 
   @media (min-width: @desktop-width) {
     text-align: center;
+    margin: 0;
+    margin-top: -38px;
+  }
+}
+
+.gift__icon {
+  margin-top: 33px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -6px;
+    margin-left: -51px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-top: 14px;
   }
 }

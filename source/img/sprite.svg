@@ -4,8 +4,8 @@
       <rect width="38" height="38" x="1" y="109" fill="#fff" rx="19" />
       <path fill="currentColor" d="m16 119-8 9 8 9v-18ZM32 128l-8-9v18l8-9Z" />
       <rect width="38" height="38" x="1" y="109" stroke="currentColor" stroke-width="2" rx="19" />
-   </symbol>
-   <symbol fill="none" id="slider-tablet">
+    </symbol>
+    <symbol fill="none" id="slider-tablet">
       <rect width="4" height="512" x="18" fill="currentColor" rx="2" />
       <rect width="38" height="38" x="1" y="237" fill="#fff" rx="19" />
       <path fill="currentColor" d="m16 247-8 9 8 9v-18ZM32 256l-8-9v18l8-9Z" />

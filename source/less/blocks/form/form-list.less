@@ -83,6 +83,18 @@
   margin-right: 40px;
   padding-left: 20px;
 
+  &:invalid {
+    outline: 2px solid @color-error;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid @black;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -120,6 +132,19 @@
   }
 }
 
+.form-list__item-radio:hover + .form-list__item-radio-mark {
+  outline: 1px solid #bababa;
+}
+
+.form-list__item-radio:focus + .form-list__item-radio-mark {
+  outline: 1px solid @green;
+}
+
+.form-list__item-radio:active + .form-list__item-radio-mark {
+  outline: 1px solid #bababa;
+  opacity: 0.8;
+}
+
 .form-list__item-radio-mark {
   width: 40px;
   height: 40px;
@@ -127,6 +152,7 @@
   position: absolute;
   top: -3px;
   left: -60px;
+  cursor: pointer;
 
   @media (max-width: @mobile-width-only) {
     width: 30px;
@@ -173,6 +199,7 @@
 
 .form-list__item-radio-text {
   color: @dark-grey3;
+  cursor: pointer;
 }
 
 .form-list__item-checkbox {
@@ -190,6 +217,7 @@
   height: 40px;
   top: -5px;
   left: -15px;
+  cursor: pointer;
 
   @media (max-width: @mobile-width-only) {
     width: 30px;
@@ -197,6 +225,19 @@
     top: -7px;
     left: -47px;
   }
+}
+
+.form-list__item-checkbox:hover + .form-list__item-checkbox-mark {
+  outline: 1px solid #bababa;
+}
+
+.form-list__item-checkbox:focus + .form-list__item-checkbox-mark {
+  outline: 1px solid @green;
+}
+
+.form-list__item-checkbox:active + .form-list__item-checkbox-mark {
+  outline: 1px solid #bababa;
+  opacity: 0.8;
 }
 
 .form-list__item-checkbox[type="checkbox"] + .form-list__item-checkbox-mark {
@@ -234,6 +275,7 @@
 
 .form-list__item-checkbox-text {
   color: @black;
+  cursor: pointer;
 }
 
 .form-list__item-input--dark {

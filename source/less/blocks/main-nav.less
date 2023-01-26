@@ -4,10 +4,16 @@
   padding: 0;
   background-color: @white;
   top: 65px;
+  position: absolute;
 
   @media (max-width: @mobile-width-only) {
     &--closed {
       display: none;
+    }
+
+    &--nojs {
+      position: relative;
+      top: 0;
     }
   }
 
@@ -94,6 +100,14 @@
       padding-top: 2px;
       border-bottom: 2px solid @green;
     }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: @desktop-width) {

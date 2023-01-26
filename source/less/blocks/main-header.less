@@ -27,6 +27,14 @@
   width: 280px;
   min-height: 65px;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: @tablet-width) {
     width: 174px;
     margin-top: -6px;
@@ -63,8 +71,29 @@
 }
 
 .main-header__logo-button {
-  background-color: @white;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+  background-image: url("../img/mobile/header-menu-button-mobile.svg"), linear-gradient(@white, @white);
+  background-repeat: no-repeat;
+  background-size: cover;
   border: none;
+
+  &--close {
+    background-image: url("../img/mobile/header-menu-button-mobile-close.svg"), linear-gradient(@white, @white);
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    &--nojs {
+      display: none;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     display: none;

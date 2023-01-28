@@ -12,6 +12,7 @@
     width: 1220px;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -267,14 +268,18 @@
   margin-bottom: 22px;
   align-self: start;
 
+  &:active {
+    opacity: 0.6;
+  }
+
   &::after {
     content: url("../img/arrow-icon.svg");
     position: absolute;
-    margin-left: 15px;
+    padding-left: 15px;
     top: -3px;
 
     @media (min-width: @tablet-width) {
-      margin-left: 25px;
+      padding-left: 25px;
     }
   }
 

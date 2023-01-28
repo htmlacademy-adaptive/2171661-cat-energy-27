@@ -71,6 +71,15 @@
   position: absolute;
   color: @brown;
   left: 43%;
+  cursor: pointer;
+
+  &:hover {
+    color: @green;
+  }
+
+  &:active {
+    color: @dark-green;
+  }
 
   @media (max-width: @mobile-width-only) {
     &--tablet {
